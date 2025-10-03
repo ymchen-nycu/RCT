@@ -1,0 +1,157 @@
+{
+    "108": {
+        "folder": "images/Members/Alumni/108",
+        "members": [
+            {
+                "name": "林國鈞(Jimmy)",
+                "desc": "<b>Thesis：</b>A High-security-level Iris Recognition System based on Soft Template Reliability Extraction and Error Protection<br>基於軟式可靠度值萃取與錯誤保護的高安全層級之虹膜辨識系統<br><br><b>Current job：</b>",
+                "photo": "Jimmy-Lin.jpg"
+            },
+            {
+                "name": "楊榮展",
+                "desc": "<b>Thesis：</b>Polar Decoding with Schedule Diversity Based on LDPC-like Sparse Graphs<br>基於類低密度奇偶檢查稀疏圖具排程多樣性的極化碼解碼方法<br><br><b>Current job：</b>惠榮科技",
+                "photo": "Rongzhan-Yang.jpg"
+            }
+        ]
+    },
+    "109": {
+        "folder": "images/Members/Alumni/109",
+        "members": [
+            {
+                "name": "朱俊宇",
+                "desc": "<b>Thesis：</b>Advanced Research on the High-security-level Iris Recognition System Based on Soft Reliability Extraction and Error Correction<br>基於軟式可靠度值萃取與錯誤保護的高安全層級之虹膜辨識系統的進階研究<br><br><b>Current job：</b>MEDIA TEK 聯發科",
+                "photo": "Junyu-Zhu.jpg"
+            },
+            {
+                "name": "胡焜閔",
+                "desc": "<b>Thesis：</b>On the design of Filter Bank Multi-Carrier Transmission Schemes Utilizing Intrinsic Interferences<br>利用固有干擾的濾波器組多載波傳輸架構設計<br><br><b>Current job：</b>MEDIA TEK 聯發科",
+                "photo": "Kunmin-Hu.jpg"
+            },
+            {
+                "name": "許育誠",
+                "desc": "<b>Thesis：</b>On the Design of Near-optimal MIMO-SCMA Schemes<br>趨近最佳的多輸入多輸出稀疏碼多工存取架構設計<br><br><b>Current job：</b>CHUNGWHWA TELECOM 中華電信",
+                "photo": "Yucheng-Hsu.jpg"
+            },
+            {
+                "name": "Carlos",
+                "desc": "<b>Thesis：</b>Reinforcement Learning Based Designs of Sparse Code Multiple Access Codebooks<br><br><b>Current job：</b>CIENET TECHNOLOGIES 瞬聯科技",
+                "photo": "Carlos.jpg"
+            },
+            {
+                "name": "黃柏綸",
+                "desc": "<b>Thesis：</b>A Novel Polar Belief Propagation Decoding Based on Schedule Diversity and Noise Perturbation<br>一種嶄新的基於排程多樣性與雜訊擾動的極化碼置信度傳播解碼方式<br><br><b>Current job：</b>PHISON 群聯電子",
+                "photo": "Bolun-Huang.jpg"
+            }
+        ]
+    },
+    "110": {
+        "folder": "images/Members/Alumni/110",
+        "members": [
+            {
+                "name": "王葆弘",
+                "desc": "<b>Thesis：</b>A Joint Design of SCMA Codebook and PTS-based PAPR Reduction for Downlink OFDM Scheme<br>針對下行鏈路正交分類多工架構的一種疏碼多工存取碼簿與基於部分傳輸序列峰鈞功率比降低方法的整合設計<br><br><b>Current job：</b>台積電",
+                "photo": "Baohong-Wang.jpg"
+            },
+            {
+                "name": "陳楷屏",
+                "desc": "<b>Thesis：</b>On the Design of Near-optimal SCMA Codebooks Based on Deep Learning Strategies<br>基於深度學習技術的趨近最佳稀疏碼多工存取碼簿設計<br><br><b>Current job：</b>廣達電腦",
+                "photo": "Kaiping-Chen.jpg"
+            },
+            {
+                "name": "黃國銓",
+                "desc": "<b>Thesis：</b>The High-accuracy-Level Iris Recognition System Based on Data Augmentation and Deep Learning Strategies<br>基於資料增量與深度學習技術的高精確度虹膜辨識系統<br><br><b>Current job：</b>CHUNGWHWA TELECOM 中華電信",
+                "photo": "Guoquan-Huang.jpg"
+            },
+            {
+                "name": "龔星宇",
+                "desc": "<b>Thesis：</b>On the Design of Noncoherent SCMA Schemes Based on Deep Learning Strategies<br>基於深度學習技術的非同調稀疏碼多工存取架構設計<br><br><b>Current job：</b>美光科技",
+                "photo": "Xingyu-Gong.jpg"
+            }
+        ]
+    },
+    "111": {
+        "folder": "images/Members/Alumni/111",
+        "members": [
+            {
+                "name": "古軒 (Eric)",
+                "desc": "<b>Thesis：</b>A Novel EMD Constrained Progressive Edge-growth LDPC Construction Algorithm Based on Parallel Vector Message Passing<br>基於平行向量資訊傳遞的一種嶄新的外部訊息度受限的漸進邊際增長低密度奇偶檢查碼建構方法<br><br><b>Current job：</b>",
+                "photo": "Eric-Ku.jpg"
+            },
+            {
+                "name": "吳孟宸 (Austin)",
+                "desc": "<b>Thesis：</b>A Study of Uplink Grant-free Non-orthogonal Multiple Access Schemes<br>無允諾上行鏈路非正交多重接取架構的研究<br><br><b>Current job：</b>CHUNGWHWA TELECOM 中華電信",
+                "photo": "Austin-Wu.jpg"
+            },
+            {
+                "name": "林宗憲 (Bryant)",
+                "desc": "<b>Thesis：</b>Deep Neural Network Aided Designs of Bit-interleaved Coded Modulation Schemes<br>深度神經網路輔助的位元交錯編碼調變架構設計<br><br><b>Current job：</b>廣達電腦",
+                "photo": "Bryant-Lin.jpg"
+            },
+            {
+                "name": "陳鈺享 (Sam)",
+                "desc": "<b>Thesis：</b>A Cross-domain Iris Presentation Attack Detector Based on Semi-supervised Learning Neural Networks<br>基於半監督式學習神經網路的一種跨域虹膜演示攻擊檢測器<br><br><b>Current job：</b>鉅立半導體 應用工程師",
+                "photo": "Sam-Chen.jpg"
+            }
+        ]
+    },
+    "112": {
+        "folder": "images/Members/Alumni/112",
+        "members": [
+            {
+                "name": "陳鐿心 (Evelyn)",
+                "desc": "<b>Scope：</b>Error-Correcting Code<br><br><b>Current job：</b>工研院",
+                "photo": "Evelyn-Chen.jpg"
+            },
+            {
+                "name": "劉恩瑞 (Ray)",
+                "desc": "<b>Scope：</b>Sparse Code Multiple Access<br><br><b>Current job：</b>",
+                "photo": "Ray-Liu.jpg"
+            },
+            {
+                "name": "蔡昌佑 (Will)",
+                "desc": "<b>Scope：</b>Sparse Code Multiple Access<br><br><b>Current job：</b>中華電信",
+                "photo": "Will-Tsai.jpg"
+            }
+        ]
+    },
+    "113": {
+        "folder": "images/Members/Alumni/113",
+        "members": [
+            {
+                "name": "許明凱 (Kevin)",
+                "desc": "<b>Current job：</b>聯電",
+                "photo": "Kevin-Hsu.jpg"
+            },
+            {
+                "name": "游程鈞 (Kevin)",
+                "desc": "",
+                "photo": "Kevin-Yu.jpg"
+            },
+            {
+                "name": "劉伸昱",
+                "desc": "",
+                "photo": "Shenyu-Liu.png"
+            },
+            {
+                "name": "鄭宇翔 (Paul)",
+                "desc": "<b>Current job：</b>鴻海",
+                "photo": "Paul-Cheng.jpg"
+            }
+        ]
+    },
+    "PhD": {
+        "folder": "images/Members/Alumni/PhD",
+        "members": [
+            {
+                "name": "吳峰蒼",
+                "desc": "<b>Thesis：</b>On the design of near-optimal variable-length error-correcting codes for large source alphabets<br><br><b>Current job：</b>空軍航空技術學院航空電子科 助理教授",
+                "photo": "Fengcang-Wu.jpg"
+            },
+            {
+                "name": "林國鈞(Jimmy)",
+                "desc": "<b>Thesis：</b>A High-security-level Iris Recognition System based on Soft Template Reliability Extraction and Error Protection<br>基於軟式可靠度值萃取與錯誤保護的高安全層級之虹膜辨識系統<br><br><b>Current job：</b>",
+                "photo": "Jimmy-Lin.jpg"
+            }
+        ]
+    }
+}

@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYCU RCT LAB</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+</head>
+
+<body class="advisor">
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- 按鈕列 -->
+        <section class="button-section">
+            <button data-target="biography" class="active">Biography</button>
+            <button data-target="honors">Honors</button>
+            <button data-target="activities">Academic Activities</button>
+            <button data-target="publications">Publications</button>
+        </section>
+
+        <!-- 個人資訊 -->
+        <template id="right-column-template">
+            <img src="images/Members/Professor/YM_Chen.jpg" alt="YM Chen">
+            <strong style="color:#000; display:block; margin-top:20px; margin-bottom:20px; font-size:1.05rem;">
+                Yen-Ming Chen (陳彥銘), Ph.D.
+            </strong>
+            <figcaption>Associate Professor</figcaption>
+            <figcaption>Institute of Communications Engineering</figcaption>
+            <figcaption>National Yang Ming Chiao Tung University<br><br></figcaption>
+            <figcaption>R907, Engineering Building 4,</figcaption>
+            <figcaption>No.1001, Daxue Rd., East Dist., Hsinchu City 300093, Taiwan</figcaption>
+            <figcaption>Tel: +886 3 5712121</figcaption>
+            <figcaption>#54543 (Office) | #54581 (RCT LAB)<br><br></figcaption>
+            <figcaption>
+                E-mail (1):
+                <a href="mailto:emerychen.cm@gmail.com">emerychen.cm@gmail.com</a>
+            </figcaption>
+            <figcaption>
+                E-mail (2):
+                <a href="mailto:ymchen@nycu.edu.tw">ymchen@nycu.edu.tw</a>
+            </figcaption>
+            <figcaption>My CV:
+                <a href="https://mx.nthu.edu.tw/~ymchen/doc/CV_Yen-Ming%20Chen_Eng.pdf">Download</a>
+            </figcaption>
+        </template>
+
+        <!-- BIOGRAPHY -->
+        <section id="biography" class="content active">
+            <div class="content-section">
+                <div class="left-column">
+                    <section>
+                        <strong
+                            style="color:#000; display:block; margin-top:20px; margin-bottom:20px; font-size:1.2rem;">
+                            Prof. Yen-Ming Chen's Biography
+                        </strong>
+                        <p>Yen-Ming Chen received the B.S. degree in electrical and control engineering from National
+                            Chiao Tung University, Hsinchu, Taiwan, in 2004, the M.S. degree (Hons.) in communications
+                            engineering from National Central University, Jhongli, Taiwan, in 2006, and the Ph.D. degree
+                            in electrical engineering from National Tsing Hua University (NTHU), Hsinchu, Taiwan, in
+                            2011.</p>
+                        <p>From 2011 to 2014, he was a Postdoctoral Research Fellow in the Department of Electrical
+                            Engineering at National Tsing Hua University (NTHU), Hsinchu, Taiwan. He then served as an
+                            Assistant Professor in the Department of Electronic Engineering at Chung Yuan Christian
+                            University, Taoyuan, Taiwan, from 2014 to 2016. From 2017 to 2025, he was with National Sun
+                            Yat-sen University, Kaohsiung, Taiwan, where he held a faculty position in the Institute of
+                            Communications Engineering and was promoted to Professor. Since 2025, he has been with the
+                            Institute of Communications Engineering at National Yang Ming Chiao Tung University,
+                            Hsinchu, Taiwan, where he is currently an Associate Professor. His research interests
+                            include error-correcting codes, coded modulation, non-orthogonal multiple access, and
+                            biometrics. In 2020, Prof. Chen was the recipient of the Best Paper Award for Young Scholars
+                            from the IEEE IT/COM Society Taipei/Tainan Chapters, and also the Best Young Professional
+                            Member Award from the IEEE Tainan Section.</p>
+                    </section>
+                    <section>
+                        <h3>Educations</h3>
+                        <ul>
+                            <li><strong>Ph.D. degree</strong> in Electrical Engineering, National Tsing Hua University
+                                (NTHU), Taiwan, 2011.</li>
+                            <li><strong>M.S. degree</strong> in Communications Engineering, National Central University
+                                (NCU), Taiwan, 2006.</li>
+                            <li><strong>B.S. degree</strong> in Electrical and Control Engineering, National Chiao Tung
+                                University (NCTU), Taiwan, 2004.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Research Interests</h3>
+                        <p>My research interests currently include:</p>
+                        <ul>
+                            <li><strong>Wireless Communications</strong></li>
+                            <li><strong>Nonorthogonal Multiple Access</strong></li>
+                            <li><strong>Error-Correcting Codes</strong></li>
+                            <li><strong>Noncoherent Detection</strong></li>
+                            <li><strong>Biometrics</strong></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Experiences</h3>
+                        <ul>
+                            <li>Aug. 2025 - present<br>
+                                Associate Professor, Institute of Communications Engineering, National Yang Ming Chiao
+                                Tung University, Hsinchu, Taiwan.</li>
+                            <li>Feb. 2025 - Jul. 2025<br>
+                                Professor, Institute of Communications Engineering and Department of Electrical
+                                Engineering, National Sun Yat-sen University, Kaohsiung, Taiwan.</li>
+                            <li>Nov. 2023 - Jul. 2025<br>
+                                Director of Division of Student Exchange, Office of International Affairs, National Sun
+                                Yat-sen University, Kaohsiung, Taiwan. (國立中山大學國際事務處學生交換事務組組長)</li>
+                            <li>Aug. 2021 - Jul. 2025<br>Director of Digital Forensics Group, Information Security
+                                Research Center, National Sun Yat-sen University, Kaohsiung, Taiwan.
+                                (國立中山大學資訊安全研究中心數位鑑識組組長)</li>
+                            <li>Aug. 2021 - Jul. 2025<br>Director of International Master's Program in Telecommunication
+                                Engineering (電信工程國際碩士學位學程主任), National Sun Yat-sen University, Kaohsiung, Taiwan.</li>
+                            <li>Feb. 2021 - Jan. 2025<br>Associate Professor, Institute of Communications Engineering
+                                and Department of Electrical Engineering, National Sun Yat-sen University, Kaohsiung,
+                                Taiwan.</li>
+                            <li>Jul. 2024<br>Visiting Scholar of University of Southampton, Southampton, UK.</li>
+                            <li>Feb. 2017 - Jan. 2021<br>Assistant Professor, Institute of Communications Engineering
+                                and Department of Electrical Engineering, National Sun Yat-sen University, Kaohsiung,
+                                Taiwan.</li>
+                            <li>Aug. 2016 - Jan. 2017<br>Assistant Research Fellow, Massive MIMO Antenna System Research
+                                Center, National Sun Yat-sen University, Kaohsiung, Taiwan.</li>
+                            <li>Sept. 2014 - July 2016<br>Assistant Professor, Dept. of Electronic Engineering, Chung
+                                Yuan Christian University, Chung Li, Taiwan.</li>
+                            <li>Sept. 2011 - Aug. 2014<br>Postdoctoral Research Fellow, Dept. of Electrical Engineering,
+                                National Tsing Hua University, Hsinchu, Taiwan.</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="right-column"></div>
+            </div>
+        </section>
+
+        <!-- HONORS -->
+        <section id="honors" class="content">
+            <div class="content-section">
+                <div class="left-column">
+                    <section>
+                        <strong
+                            style="color:#000; display:block; margin-top:20px; margin-bottom:20px; font-size:1.2rem;">
+                            Prof. Yen-Ming Chen's Honors
+                        </strong>
+                    </section>
+                    <section>
+                        <h3>Honors</h3>
+                        <ul>
+                            <li>榮獲113學年度國立中山大學工學院年輕學者獎<br>(2024 Young Scholar Awards for the College of Engineering,
+                                NSYSU)
+                            </li>
+                            <li>榮獲 International Young Scientist Awards Best Researcher Award</li>
+                            <li>2024鴻海科技獎（指導獲獎博士班學生：林國鈞）<br>Hon Hai Technology Award (Awarded Ph.D Student: Kuo-Chun
+                                Lin)
+                            </li>
+                            <li>榮獲111學年度優秀年輕學者研究計畫獎補助 (2022 Project for Excellent Junior Research Investigators,
+                                MOST)<br>計畫名稱: 人工智慧與錯誤更正碼輔助高資訊安全與高辨識效能生物辨識架構設計</li>
+                            <li>榮獲112學年度國科會電信學門成果發表-優良海報展示獎<br>(Excellent Research Project Poster Award, Communications
+                                Engineering Program, National Science and Technology Council (NSTC), 2025)</li>
+                            <li>榮獲111學年度國科會電信學門成果發表-優良海報展示獎<br>(Excellent Research Project Poster Award, Communications
+                                Engineering Program, National Science and Technology Council (NSTC), 2023)</li>
+                            <li>榮獲110學年度國科會電信學門成果發表-優良海報展示獎<br>(Excellent Research Project Poster Award, Communications
+                                Engineering Program, National Science and Technology Council (NSTC), 2025)</li>
+                            <li>榮獲109學年度科技部電信學門成果發表-優良海報展示獎<br>(Excellent Research Project Poster Award, Communications
+                                Engineering Program, Ministry of Science and Technology (MOST), 2022)</li>
+                            <li>榮獲110學年度國立中山大學「學術研究績優教師」<br>(2021 NSYSU Award for Distinguished Faculty in Academic
+                                Research)</li>
+                            <li>榮獲2020 IEEE ITSOC暨COMSOC台北/台南支會年輕學者最佳論文獎<br>(2020 IEEE ITSOC/COMSOC Taipei/Tainan
+                                Chapter Best Paper Award for Young Scholars)</li>
+                            <li>榮獲2020 IEEE Tainan Section Best Young Professional Member Award</li>
+                            <li>榮獲國立中山大學109學年度產學激勵獎- 新秀類</li>
+                            <li>國立中山大學112學年度博士研究生優秀畢業論文獎 (指導學生: 林國鈞)</li>
+                            <li>國立中山大學113學年度工學院聯合專題競賽第三名 (指導學生: 趙婉琪)</li>
+                            <li>國立中山大學111學年度工學院聯合專題競賽優等第二名 (指導學生: 林國鈞/陳鈺享)</li>
+                            <li>國立中山大學110學年度工學院聯合專題競賽佳作 (指導學生: 林國鈞/黃國銓/陳鈺享)</li>
+                            <li>國立中山大學108學年度工學院聯合專題競賽第二名 (指導學生: 林國鈞/朱俊宇)</li>
+                            <li>國立中山大學107學年度工學院聯合專題競賽佳作 (指導學生: 王泓閔/賴志昇/莊學叡)<br>題目:「具高可靠度之虹膜辨識系統」</li>
+                            <li>榮獲108學年度國立中山大學工學院「優良導師獎」</li>
+                            <li>榮獲108學年度國立中山大學通訊所「優良導師獎」</li>
+                            <li>榮獲107學年度國立中山大學工學院「優良導師獎」</li>
+                            <li>榮獲107學年度國立中山大學通訊所「優良導師獎」</li>
+                            <li>112學年度第1學期國立中山大學「教學優良課程」教師, 任教課程：錯誤更正碼</li>
+                            <li>111學年度第1學期國立中山大學「教學優良課程」教師, 任教課程：通訊系統</li>
+                            <li>110學年度第2學期國立中山大學「教學優良課程」教師, 任教課程：多重輸入輸出無線通訊系統</li>
+                            <li>110學年度第2學期國立中山大學「教學優良課程」教師, 任教課程：現代錯誤更正編碼技術</li>
+                            <li>110學年度第1學期國立中山大學「教學優良課程」教師, 任教課程：通訊系統</li>
+                            <li>109學年度第1學期國立中山大學「教學優良課程」教師, 任教課程：錯誤更正碼、無線通訊</li>
+                            <li>108學年度第2學期國立中山大學「教學優良課程」教師, 任教課程：多重輸入輸出無線通訊系統</li>
+                            <li>108學年度第1學期國立中山大學「教學優良課程」教師, 任教課程：無線通訊</li>
+                            <li>107學年度第2學期國立中山大學「教學優良課程」教師, 任教課程：通訊系統模擬</li>
+                            <li>Valedictorian for the Institute of Communications Engineering, National Central
+                                University, 2006.</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="right-column"></div>
+            </div>
+        </section>
+
+        <!-- ACADEMIC ACTIVITIES -->
+        <section id="activities" class="content">
+            <div class="content-section">
+                <div class="left-column">
+                    <section>
+                        <strong
+                            style="color:#000; display:block; margin-top:20px; margin-bottom:20px; font-size:1.2rem;">
+                            Prof. Yen-Ming Chen's Academic Activities
+                        </strong>
+                    </section>
+                    <section>
+                        <h3>Invited Talks</h3>
+                        <ul>
+                            <li>Invited talk on “DNN-assisted Near-optimal Sparse Code Multiple Access Schemes: A
+                                Code-domain NOMA for 6G and Beyond" at Dept. Electrical Engineering, National Taiwan
+                                Ocean University, Taiwan, 5 Nov. 2024.</li>
+                            <li>Invited talk on “DNN-assisted Near-optimal Sparse Code Multiple Access Schemes: A
+                                Code-domain NOMA for 6G and Beyond" at Dept. Communications Engineering, National Taipei
+                                University, Taiwan, 18 Oct. 2024.</li>
+                            <li>Invited talk on “On the Design of Near-Optimal Variable-Length Error-Correcting Codes"
+                                at 2024 Taiwan Workshop on Information Theory and Communications
+                                (2024消息理論及通訊秋季研討會暨112年度國科會電信學門計畫成果發表會), National Cheng Kung University, Tainan, Taiwan,
+                                14 Aug. 2024.</li>
+                            <li>Invited talk on “An Efficient Soft-output Fixed-complexity Sphere Decoder for Large QAM
+                                Constellations" at B5G/6G Advanced Communication Technology Workshop, National Taiwan
+                                University, Taipei, Taiwan, 26 July 2024.</li>
+                            <li>Invited talk on “On the Design of Near-optimal Sparse Code Multiple Access: A
+                                Code-domain NOMA for 6G and Beyond" at School of Electronics and Computer Science,
+                                University of Southampton, UK, 9 July 2024.</li>
+                            <li>Guest Speaker of School of Electrical Engineering, Telkom University, Dept. Electrical
+                                Engineering, Universitas Islam Indonesia (UII), Dept. Electrical Engineering, Institut
+                                Teknologi Sepuluh Nopember (ITS) (印尼泗水理工學院) and Dept. Electrical Engineering, University
+                                of Brawijaya (UB) (印尼布勞爪哇大學), Feb. 2024.</li>
+                            <li>Invited talk on “On the Design of Near-optimal Sparse Code Multiple Access: A
+                                Code-domain NOMA for 6G and Beyond" at Dept. Electrical Engineering, Institut Teknologi
+                                Sepuluh Nopember (ITS)(印尼泗水理工學院電機系), 1 Nov. 2023.</li>
+                            <li>Invited talk on “On the Design of Near-optimal Variable-length Error-correcting Codes"
+                                at Dept. Electrical Engineering, National Tsing Hua University, 26 May 2023.</li>
+                            <li>Invited talk on “On the Design of Near-optimal Sparse Code Multiple Access Schemes,"
+                                2022 IEEE Taiwan Workshop on Information Theory and Communications
+                                (2022消息理論及通訊秋季研討會暨110年度科技部電信學門計畫成果發表會), Yuan Ze University, Taoyuan , Taiwan, 18 August
+                                2022.</li>
+                            <li>Invited talk on “On the Design of Near-optimal Sparse Code Multiple Access Schemes" at
+                                Inst. Communications Engineering, National Tsing Hua University, 1 Oct. 2021.</li>
+                            <li>Invited talk on “On the design of Near-optimal SCMA codebooks" at Dept. Engineering
+                                Science, National Cheng Kung University, 17 Dec. 2020.</li>
+                            <li>受邀於5G無線通訊技術聯盟主辦之「種子教師培訓營_下世代編碼技術模組」擔任講師, 講題: "編碼理論與實驗: Polar Coding," 國立交通大學, 12 Aug.,
+                                2019.</li>
+                            <li>受邀於5G無線通訊技術聯盟主辦之「下世代編碼技術模組研討會」擔任講師/主持人, 講題: "Polar Coding/ 5G Polar Codec," 國立交通大學, 14
+                                Jan., 2019.</li>
+                            <li>Instructor to the course "Digital Communication: 5G Coding Techniques", NXP
+                                Semiconductors, 2017.</li>
+                            <li>Invited talk on “Raptor-coded noncoherent cooperative schemes based on distributed
+                                unitary space–time modulation" at Institute of Communications Engineering, National Sun
+                                Yat-sen University, 13 Dec. 2016.</li>
+                            <li>Invited talk on “LDPC (Low-Density Parity Check)-like rateless codes and their
+                                applications in wireless communication systems" at Center for Space and Remote Sensing
+                                Research, 9 Sept 2016.</li>
+                            <li>Invited talk on “Introduction to Error Correction Code Assisted Iris Recognition
+                                Systems" at Dept. Communications Engineering, Yuan Ze University, 6 May 2016.</li>
+                            <li>Invited talk on “LDPC (Low-Density Parity Check)-like rateless codes and their
+                                applications" at Dept. Communication Engineering, National Central University, 24 Feb.
+                                2016.</li>
+                            <li>Invited talk on “Introduction to LDPC (Low-Density Parity Check)-Like Rateless Codes "
+                                at Dept. Electronic Engineering, Chung Yuan Christian University, 23 Sept. 2015.</li>
+                            <li>Invited talk on "Introduction to LDPC (Low-Density Parity Check)-Like Rateless Codes" at
+                                Dept. Information and Computer Engineering, Chung Yuan Christian University, 23 March
+                                2015.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Services</h3>
+                        <ul>
+                            <li>參與2024年中山大學電機系印尼四校招生</li>
+                            <li>參與「2023年經濟部工業局半導體東南亞攬才團」招生(馬來西亞吉隆坡、新加坡)</li>
+                            <li>參與「2023印尼臺灣高等教育展」招生（印尼坤甸、泗水、錫江）</li>
+                            <li>擔任數位發展部「我國數位轉型及國際競爭力-專家意見分享會議」、「數位轉型調查分析及策略研究」審查委員
+                                <br>Serve as the Secretary of IEEE Broadcast Technology Society Tainan Chapter,
+                                2019-present.
+                            </li>
+                            <li>Served as a Session Chair for the following international conferences:
+                                <br>2020 IEEE Global Communications Conference (IEEE GLOBECOM 2020)
+                                <br>2015 International Conference on Information, Communications and Signal Processing
+                                (ICICS2015)
+                            </li>
+                            <li>Served as a TPC member for the following conferences:
+                                <br>2025 10th International Conference on Biomedical and Bioinformatics Engineering
+                                (ICBBE 2023)
+                                <br>2025 21st IEEE VTS Asia Pacific Wireless Communications Symposium (APWCS 2025)
+                                <br>2023 32nd Wireless and Optical Communications Conference (WOCC)
+                                <br>2022 IEEE 96th Vehicular Technology Conference (VTC2022-Fall: London: Beijing)
+                                <br>2022 IEEE 95th Vehicular Technology Conference (VTC2022-Spring: Helsinki, Finland)
+                                <br>2020 IEEE 92nd Vehicular Technology Conference (VTC2020-Fall: Victoria)
+                                <br>2019 IEEE 90th Vehicular Technology Conference (VTC2019-Fall)
+                                <br>2022 Taiwan Telecommunications Annual Symposium (台灣電信年會)
+                                <br>2020 Taiwan Telecommunications Annual Symposium (台灣電信年會)
+                                <br>2020 29th Wireless and Optical Communications Conference
+                                <br>Wireless Communications and Networking Symposium
+                                <br>2018 Taiwan Academic Network Conference (2018-臺灣網際網路研討會暨科技部資訊工程/智慧計算學門成果發表會)
+                            </li>
+                            <li>Served as a Reviewer for the following Journals:
+                                <br><i>IEEE Transactions on Communications,
+                                    <br>IEEE Transactions on Signal Processing,
+                                    <br>IEEE Transactions on Vehicular Technology,
+                                    <br>IEEE Journal of Selected Topics in Signal Processing,
+                                    <br>IEEE Journal on Emerging and Selected Topics in Circuits and Systems,
+                                    <br>IEEE Wireless Communications Letters,
+                                    <br>IEEE Communications Letters,
+                                    <br>IEEE Signal Processing Letters
+                                    <br>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems
+                                    <br>IEEE Systems Journal
+                                    <br>IET Communications,
+                                    <br>China Communications
+                                    <br>Journal of Visual Communication and Image Representation,
+                                    <br>Wireless Communications and Mobile Computing.</i>
+                            </li>
+                            <li>Thesis oral examination committee member, National Yang Ming Chiao Tung University,
+                                advisor: Prof. Yu-Ted Su (2024).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Fan-Shuo Tseng (2024).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Yen-Ming Chen (2024).</li>
+                            <li>Thesis oral examination committee member, National Cheng Kung University, advisor: Prof.
+                                Chao-Yu Chen (2024).</li>
+                            <li>Thesis oral examination committee member, National Central University, advisor: Prof.
+                                Ruey-Yi Wei (2024).</li>
+                            <li>Thesis oral examination committee member, National Cheng Kung University, advisor: Prof.
+                                Chao-Yu Chen (2023).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Yen-Ming Chen (2023).</li>
+                            <li>Thesis oral examination committee member, National Central University, advisor: Prof.
+                                Ruey-Yi Wei (2023).</li>
+                            <li>Thesis oral examination committee member, National Cheng Kung University, advisor: Prof.
+                                Chao-Yu Chen (2022).</li>
+                            <li>Thesis oral examination committee member, Feng Chia University, advisor: Prof. Wei-Lun
+                                Lin (2022).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Wan-Jen Huang (2022).</li>
+                            <li>Thesis oral examination committee member, National Central University, advisor: Prof.
+                                Ruey-Yi Wei (2022).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Chi-Peng Li (2022).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Yen-Ming Chen (2022).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Fan-Shuo Tseng (2022).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Bo-Wei Chen (2022).</li>
+                            <li>Thesis oral examination committee member, National Cheng Kung University, advisor: Prof.
+                                Chao-Yu Chen (2021).</li>
+                            <li>Thesis oral examination committee member, National Central University, advisor: Prof.
+                                Ruey-Yi Wei (2021).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Chi-Peng Li (2021).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Yen-Ming Chen (2021).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Wan-Jen Huang (2018).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Fan-Shuo Tseng (2018).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Chi-Peng Li (2018).</li>
+                            <li>Thesis oral examination committee member, Feng Chia University, advisor: Prof. Yi-Sheng
+                                Chen and Prof. Wei-Lun Lin (2018).</li>
+                            <li>Thesis oral examination committee member, National Central University, advisor: Prof.
+                                Ruey-Yi Wei (2018).</li>
+                            <li>Doctoral oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Chi-Peng Li (2017).</li>
+                            <li>Thesis oral examination committee member, National Sun Yat-sen University, advisor:
+                                Prof. Chi-Peng Li (2016).</li>
+                            <li>Thesis oral examination committee member, National Tsing-Hua University, advisor: Prof.
+                                Yeong-Luh Ueng (2016).</li>
+                            <li>Thesis oral examination committee member, National Tsing-Hua University, advisor: Prof.
+                                Yeong-Luh Ueng (2015).</li>
+                            <li>Thesis oral examination committee member, National Central University, advisor: Prof.
+                                Ruey-Yi Wei (2015).</li>
+                            <li>Co-advising of master dissertation, National Central University, advisor: Prof. Ruey-Yi
+                                Wei (2014).</li>
+                            <li>Thesis oral examination committee member, National Chiao Tung University, advisor: Prof.
+                                Po-Ning Chen (2013).</li>
+                            <li>Thesis oral examination committee member, National Central University, advisor: Prof.
+                                Ruey-Yi Wei (2013).</li>
+                            <li>Member of IEEE (S'08-M'11).</li>
+                            <li>Member of IEEE Communications Society.</li>
+                            <li>Member of TIEEE.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Teaching</h3>
+                        <ul>
+                            <li>參與5G無線通訊技術聯盟「下世代編碼技術模組」計畫</li>
+                            <li>參與5G無線通訊技術聯盟「5G NR實體層技術模組(多重輸入輸出無線通訊系統) 」計畫</li>
+                            <li>"Wireless Communications", Institute of Communications Engineering, National Sun Yat-sen
+                                University, 2017~2018.</li>
+                            <li>"Modern Error-correction Coding Technology", Institute of Communications Engineering,
+                                National Sun Yat-sen University, 2017~2018.</li>
+                            <li>"Multi-Input-Multi-Output Wireless Communication Systems", Institute of Communications
+                                Engineering, National Sun Yat-sen University, 2017~2018.</li>
+                            <li>"Error-correction Coding", Institute of Communications Engineering, National Sun Yat-sen
+                                University, 2017~2018.</li>
+                            <li>"Simulations of Communication Systems," Dept. of Electronic Engineering, National Sun
+                                Yat-sen University, 2018.</li>
+                            <li>"Independent Studies in Noncoherent Communication Systems", Institute of Communications
+                                Engineering, National Sun Yat-sen University, 2017~2018.</li>
+                            <li>"Independent Studies in Coding and Modulation Design", Institute of Communications
+                                Engineering, National Sun Yat-sen University, 2017~2018.</li>
+                            <li>"Engineering Mathematics (II)", Dept. of Electronic Engineering, Chung Yuan Christian
+                                University, 2016.</li>
+                            <li>"Matlab Programming", Dept. of Electronic Engineering, Chung Yuan Christian University,
+                                2016.</li>
+                            <li>"General Physics Laboratory (I)", Dept. of Electronic Engineering, Chung Yuan Christian
+                                University, 2015.</li>
+                            <li>"Circuit Laboratory", Dept. of Electronic Engineering, Chung Yuan Christian University,
+                                2015.</li>
+                            <li>"Matlab Programming", Dept. of Electronic Engineering, Chung Yuan Christian University,
+                                2015.</li>
+                            <li>"Engineering Mathematics (II)", Dept. of Electronic Engineering, Chung Yuan Christian
+                                University, 2015.</li>
+                            <li>"General Physics Laboratory (II)", Dept. of Electronic Engineering, Chung Yuan Christian
+                                University, 2015.</li>
+                            <li>"Information Theory", Dept. of Electronic Engineering, Chung Yuan Christian University,
+                                2014.</li>
+                            <li>"General Physics Laboratory (I)", Dept. of Electronic Engineering, Chung Yuan Christian
+                                University, 2014.</li>
+                            <li>TA: "Error-Correcting Codes (II)", Dept. of Electrical Engineering, NTHU.</li>
+                            <li>TA: "Communication Laboratory", Dept. of Communication Engineering, NCU.</li>
+                            <li>TA: "Linear Algebra", Dept. of Communication Engineering, NCU.</li>
+                            <li>TA: "Coded Modulation Theory", Dept. of Communication Engineering, NCU.</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="right-column"></div>
+            </div>
+        </section>
+
+        <!-- PUBLICATIONS -->
+        <section id="publications" class="content">
+            <div class="content-section">
+                <div class="left-column">
+                    <section>
+                        <strong
+                            style="color:#000; display:block; margin-top:20px; margin-bottom:20px; font-size:1.2rem;">
+                            Prof. Yen-Ming Chen's Publications
+                        </strong>
+                    </section>
+                    <section>
+                        <h3>Book Chapters</h3>
+                        <ul class="ref-list">
+                            <li data-code="[BC1]">
+                                Huang-Chang Lee, <u><strong>Yen-Ming Chen</strong></u>, and Yeong-Luh Ueng, “Decoding
+                                Scheduling for Low-Density Parity-Check Codes,” in <i>Recent Advances in Information,
+                                    Communications and Signal Processing</i>, Editors: Andy W. H. Khong and Yong Liang
+                                Guan, Publisher: River Publishers, 2018.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Journal Papers <span class="note"> (*Corresponding Author)</span></h3>
+                        <ul class="ref-list">
+                            <li data-code="[J29]">
+                                Hao-Liang Wen, Kuo-Chun Lin, and <u><strong>Yen-Ming Chen*</strong></u>, “Unsupervised
+                                domain adaptation based on progressive learning for iris presentation attack detection,”
+                                in preparation.
+                            </li>
+                            <li data-code="[J28]">
+                                Feng-Tsang Wu and <u><strong>Yen-Ming Chen*</strong></u>, “On the design of near-optimal
+                                variable-length error-correcting codes adaptive to source symbol probability
+                                distributions,” in preparation.
+                            </li>
+                            <li data-code="[J27]">
+                                <u><strong>Yen-Ming Chen*</strong></u> and Kai-Ping Chen, "On the design of near-optimal
+                                SCMA codebooks based on deep learning strategies," in preparation.
+                            </li>
+                            <li data-code="[J26]">
+                                Cheng-Jun You, Yi-Hsin Chen, Chen-Wei Hu, Huang-Chang Lee and <u><strong>Yen-Ming
+                                        Chen*</strong></u>, "Belief propagation-based polar decoders with schedule
+                                diversity," <strong>submitted</strong> to <i>IEEE Transactions on Communications</i>
+                                <strong> (in revision)</strong>
+                            </li>
+                            <li data-code="[J25]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Ya-Xin Dai, Shih-Jie Jhang and Yeong-Luh Ueng,
+                                “An efficient soft-output fixed-complexity sphere decoder for large QAM constellations,”
+                                <strong>accepted</strong> by <i>IEEE Transactions on Vehicular Technology</i>.
+                            </li>
+                            <li data-code="[J24]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Wei-Lun Lin, Heng Lee, and Tsung-Lin Chen, "On
+                                the design of near-optimal generalized block-based spatial modulation with low detection
+                                complexity," <i>IEEE Open Journal of Signal Processing</i>, vol. 6, pp. 555-570, 2025.
+                            </li>
+                            <li data-code="[J23]">
+                                Kuo-Chun Lin and <u><strong>Yen-Ming Chen*</strong></u>, "A high-security-level iris
+                                cryptosystem based on fuzzy commitment and soft reliability extraction," <i>IEEE
+                                    Transactions on Dependable and Secure Computing</i>, vol. 21, no. 4, pp. 1770-1784,
+                                July-Aug. 2024. <strong><u>(This paper is awarded Hon Hai Technology Award;
+                                        本論文榮獲2024鴻海科技獎)</u></strong>
+                            </li>
+                            <li data-code="[J22]">
+                                Kuo-Chun Lin and <u><strong>Yen-Ming Chen*</strong></u>, "A high-security-level iris
+                                recognition system based on multi-scale dominating feature points," <i>IEEE Signal
+                                    Processing Letters</i>, vol. 31, pp. 1600-1604, 2024.
+                            </li>
+                            <li data-code="[J21]">
+                                S. K. Singh, K. Agrawal, K. Singh, <u><strong>Yen-Ming Chen</strong></u> and Chih-Peng
+                                Li, "Performance analysis and optimization of RSMA enabled UAV-aided IBL and FBL
+                                communication with imperfect SIC and CSI," <i>IEEE Transactions on Wireless
+                                    Communications</i>, vol. 22, no. 6, pp. 3714-3732, June 2023.
+                            </li>
+                            <li data-code="[J20]">
+                                <u><strong>Yen-Ming Chen*</strong></u>, Yu-Chen Hsu, Meng-Chen Wu, Rupender Singh, and
+                                Yuan-Chu Chang, "On near-optimal codebook and receiver designs for MIMO-SCMA schemes,"
+                                <i>IEEE Transactions on Wireless Communications</i>, vol. 21, no. 12, pp. 10724-10738,
+                                Dec. 2022.
+                            </li>
+                            <li data-code="[J19]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Pao-Hung Wang, Chia-Sheng Cheng, and Yeong-Luh
+                                Ueng, "A joint design of SCMA codebook and PTS-based PAPR reduction for downlink OFDM
+                                scheme," <i>IEEE Transactions on Vehicular Technology</i>, vol. 71, no.11, pp.
+                                11936-11948, Nov. 2022.
+                            </li>
+                            <li data-code="[J18]">
+                                <u><strong>Yen-Ming Chen*</strong></u>, Carlos D. Sagastume Gonzalez, Pao-Hung Wang, and
+                                Kai-Ping Chen, "Reinforcement learning-based SCMA codebook design for uplink Rayleigh
+                                fading channels," <i>IEEE Wireless Communications Letters</i>, vol. 10, no. 8, pp.
+                                1717-1721, Aug. 2021.
+                            </li>
+                            <li data-code="[J17]">
+                                Chia-Po Wei, Han Yang, Chih-Peng Li, and <u><strong>Yen-Ming Chen</strong></u>, “SCMA
+                                decoding via deep learning,” <i>IEEE Wireless Communications Letters</i>, vol. 10, no.
+                                4, pp. 878-881, Apr. 2021.
+                            </li>
+                            <li data-code="[J16]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Feng-Tsang Wu, Chih-Peng Li, and Pramod K.
+                                Varshney “On the design of near-optimal variable-length error-correcting codes for large
+                                source alphabets,” <i>IEEE Transactions on Communications</i>, vol. 68, no.12, pp.
+                                7896-7910, Dec. 2020.
+                            </li>
+                            <li data-code="[J15]">
+                                <u><strong>Yen-Ming Chen*</strong></u> and Jian-Wei Chen, “On the design of near-optimal
+                                sparse code multiple access codebooks,” <i>IEEE Transactions on Communications</i>, vol.
+                                68, no.5, pp. 2950-2962, May 2020.
+                                <u><strong>(This paper is awarded the IEEE ITSOC/COMSOC Taipei/Tainan Chapter Best Paper
+                                        Award for Young Scholars; 本論文榮獲IEEE ITSOC暨COMSOC台北/台南支會年輕學者最佳論文獎)</strong></u>
+                            </li>
+                            <li data-code="[J14]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Wei-Min Lai, and Yeong-Luh Ueng, "Rateless coded
+                                multiplexing for downlink transmission with two users: performance analysis and system
+                                design," <i>IEEE Access: Special Section on Advances in Channel Coding for 5G and
+                                    Beyond</i>, vol. 7, pp. 50440-50452, April, 2019.
+                            </li>
+                            <li data-code="[J13]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Feng-Tsang Wu, Chih-Peng Li, and Pramod K.
+                                Varshney, “An efficient construction strategy for near-optimal variable-length
+                                error-correcting codes,” <i>IEEE Communications Letters</i>, vol. 23, no. 3, pp.
+                                398-401, March 2019.
+                            </li>
+                            <li data-code="[J12]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Wen-Chun Chen, Chih-Peng Li, and Zygmunt J. Haas,
+                                “Low-complexity generalized spatial modulation schemes using codebook-assisted MIMO
+                                detectors,” <i>IEEE Transactions on Vehicular Technology</i>, vol. 67, no. 12, pp.
+                                12358-12362, Dec. 2018.
+                            </li>
+                            <li data-code="[J11]">
+                                Chih-Peng Li, Kuo-Jen Chang, Ho-Hsuan Chang, and <u><strong>Yen-Ming Chen</strong></u>,
+                                “Perfect sequences of odd prime length,” <i>IEEE Signal Processing Letters</i>, vol. 25,
+                                no. 7, pp. 966-969, July 2018.
+                            </li>
+                            <li data-code="[J10]">
+                                Kuei-Cheng Chan, <u><strong>Yen-Ming Chen</strong></u>, Cheng-Jung Wu, and Chih-Peng Li,
+                                “Achieving full diversity on a single-carrier distributed QOSFBC transmission scheme
+                                utilizing PAPR reduction,” <i>IEEE Transactions on Communications</i>, vol. 66, no. 4,
+                                pp. 1636-1648, Apr. 2018.
+                            </li>
+                            <li data-code="[J9]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Chi-Fu Lin, and Yeong-Luh Ueng, “An LDPC-coded
+                                generalized space shift keying scheme using a codebook-assisted low-complexity massive
+                                MIMO detector,” <i>IEEE Communications Letters</i>, vol. 20, no. 3, pp. 454-457, March
+                                2016.
+                            </li>
+                            <li data-code="[J8]">
+                                Wei-Min Lai, <u><strong>Yen-Ming Chen</strong></u> and Yeong-Luh Ueng, “Raptor-coded
+                                noncoherent cooperative schemes based on distributed unitary space-time modulation,”
+                                <i>IEEE Transactions on Communications</i>, vol. 63, no. 8, pp. 2873-2884, Aug. 2015.
+                            </li>
+                            <li data-code="[J7]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Kuan-Chun Chen, Yeong-Luh Ueng, Ruey-Yi Wei, and
+                                J. Y. Hsu, "EXIT-chart-based design method for noncoherent LDPC-coded modulation in
+                                correlated Rayleigh fading channels", <i>Applied Mechanics and Materials</i>, vols.
+                                719-720, pp. 837-844, Jan. 2015.
+                            </li>
+                            <li data-code="[J6]">
+                                <u><strong>Yen-Ming Chen</strong></u> and Yeong-Luh Ueng, “Differential amplitude/phase
+                                modulation for correlated Rayleigh fading channels: performance analysis and labelling
+                                design,” <i>IEEE Transactions on Communications</i>, vol. 62, no. 8, pp. 2927-2938, Aug.
+                                2014.
+                            </li>
+                            <li data-code="[J5]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Yeong-Luh Ueng, and Hau-Jung Shiau, “An
+                                EXIT-based design method for LDPC coded schemes without Gaussian assumptions,” <i>IEEE
+                                    Communications Letters</i>, vol. 17, no. 8, pp. 1648-1651, Aug. 2013.
+                            </li>
+                            <li data-code="[J4]">
+                                <u><strong>Yen-Ming Chen</strong></u> and Yeong-Luh Ueng, “Noncoherent amplitude/phase
+                                modulated transmission schemes for Rayleigh block fading channels,” <i>IEEE Transactions
+                                    on Communications</i>, vol. 61, no. 1, pp. 217-227, Jan. 2013.
+                            </li>
+                            <li data-code="[J3]">
+                                <u><strong>Yen-Ming Chen</strong></u> and Yeong-Luh Ueng, “Turbo coded noncoherent
+                                space-time modulation using information-bearing pilots and spatial multiplexing,”
+                                <i>IEEE Transactions on Communications</i>, vol. 59, no. 6, pp. 1543-1554, June 2011.
+                            </li>
+                            <li data-code="[J2]">
+                                Yeong-Luh Ueng, <u><strong>Yen-Ming Chen</strong></u>, and Jun-Yu Lin, “A MIMO-BICM
+                                scheme using a convolutional interleaver for delay-sensitive applications,” <i>IEEE
+                                    Transactions on Vehicular Technology</i>, vol. 59, no. 5, pp. 2380-2393, June 2010.
+                            </li>
+                            <li data-code="[J1]">
+                                Ruey-Yi Wei and <u><strong>Yen-Ming Chen</strong></u>, “Further results on noncoherent
+                                block-coded MPSK,” <i>IEEE Transactions on Communications</i>, vol. 56, no. 10, pp.
+                                1616-1625, Oct. 2008.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>International Conference Papers</h3>
+                        <ul class="ref-list">
+                            <li data-code="[C30]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Shih-Jie Jhang and Yeong-Luh Ueng, "A reliable
+                                and computationally efficient soft-output fixed-complexity sphere decoder for
+                                large-scale MIMO systems," in <i>Proc. 2025 IEEE 101st Vehicular Technology Conference:
+                                    VTC2025-Spring</i>, 17-20 Jun. 2025, Oslo, Norway.
+                            </li>
+                            <li data-code="[C29]">
+                                Kuo-Chun Lin and <u><strong>Yen-Ming Chen</strong></u>, "Advanced research on
+                                high-security-level error-correction-based
+                                iris recognition system," in <i>Proc. 2023 10th International Conference on Biomedical
+                                    and Bioinformatics Engineering (ICBBE 2023)</i>, 9-12 Nov. 2023, Kyoto, Japan.
+                            </li>
+                            <li data-code="[C28]">
+                                Ya-Xin Dai, Shih-Jie Jhang, <u><strong>Yen-Ming Chen</strong></u>, Sheng-Ping Lan, and
+                                Yeong-Luh Ueng, "An efficient soft output MIMO detector architecture for high-order
+                                modulations," in <i>Proc. 56th Asilomar Conference on Signals, Systems, and
+                                    Computers</i>, 30 Oct.- 2 Nov. 2022.
+                            </li>
+                            <li data-code="[C27]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Kuo-Chun Lin, Yao-Hsien Peng, and Chih-Peng Li,
+                                “A low-complexity high-rate spatial multiplexing aided generalized spatial modulation
+                                scheme,” in <i>Proc. IEEE International Symposium on Personal, Indoor and Mobile Radio
+                                    Communications: PIMRC2021</i>, 13–16 Sept. 2021 (EI).
+                            </li>
+                            <li data-code="[C26]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Yong-Jan Yang, Bo-Lun Huang, Huang-Chang Lee, and
+                                Chih-Peng Li, “Polar decoding with schedule diversity based on LDPC-like sparse graphs,”
+                                in <i>Proc. IEEE International Symposium on Broadband Multimedia Systems and
+                                    Broadcasting (BMSB)</i>, 3–5 June 2020, Paris, France (EI).
+                            </li>
+                            <li data-code="[C25]">
+                                <u><strong>Yen-Ming Chen</strong></u>, "Low-complexity GSSK/GSM schemes using
+                                codebook-assisted MIMO detectors," (Invited) in <i>Proc. 2018 International Symposium
+                                    for Advanced Computing and Information Technology (ISACIT 2018)</i>, 16-19 Aug.
+                                2018, Taiwan.
+                            </li>
+                            <li data-code="[C24]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Chih-Peng Li, Min-Yu Wu, and Hung-Yu Chen, “A
+                                Raptor-coded non-coherent distributed space-time modulation scheme utilizing
+                                non-orthogonal multiple access,” in <i>Proc. IEEE International Symposium on Broadband
+                                    Multimedia Systems and Broadcasting (BMSB)</i>, 6–8 June 2018, Valencia, Spain (EI).
+                            </li>
+                            <li data-code="[C23]">
+                                Huang Chang Lee, Jieng-Heng Shy, <u><strong>Yen-Ming Chen</strong></u>, and Yeong-Luh
+                                Ueng, “LDPC coded modulation for TLC flash memory,” in <i>Proc. 2017 IEEE Information
+                                    Theory Workshop (ITW)</i>, 6–10 Nov. 2017, Kaohsiung, Taiwan (EI).
+                            </li>
+                            <li data-code="[C22]">
+                                Wei-Cheng Sun, Chia-Hsiang Yang, <u><strong>Yen-Ming Chen</strong></u>, and Yeong-Luh
+                                Ueng, “An area-efficient multi-mode LLR computing engine for MMSE-based MIMO
+                                detectors,”in <i>Proc. 2017 IEEE 85th Vehicular Technology Conference:
+                                    VTC2017-Spring</i>, 4–7 June 2017, Sydney, Australia (EI).
+                            </li>
+                            <li data-code="[C21]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Wei-Min Lai and Yeong-Luh Ueng, “A Raptor-coded
+                                distributed noncoherent scheme using non-orthogonal space-time modulation,” in <i>Proc.
+                                    2017 IEEE 85th Vehicular Technology Conference: VTC2017-Spring</i>, 4–7 June 2017,
+                                Sydney, Australia (EI).
+                            </li>
+                            <li data-code="[C20]">
+                                <u><strong>Yen-Ming Chen</strong></u>, and Yeong-Luh Ueng, “A tree-search based
+                                low-complexity massive MIMO detector for generalized space shift keying schemes,” in
+                                <i>Proc. 2016 IEEE Vehicular Technology Society Asia Pacific Wireless Communications
+                                    Symposium: (APWCS2016)</i>, 25-26 August 2016, Tokyo City University, Japan (EI).
+                            </li>
+                            <li data-code="[C19]">
+                                Huang-Chang Lee, <u><strong>Yen-Ming Chen</strong></u>, Yeong-Luh Ueng, and Jen-Yuan Hsu
+                                [2015], “Further Results on LDPC Decoding Scheduling for Faster Convergence,” in
+                                <i>Proc. 10th International Conference on Information, Communications and Signal
+                                    Processing (ICICS)</i>, Singapore, 2-4 Dec. 2015. (EI)
+                            </li>
+                            <li data-code="[C18]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Kuan-Chun Chen, Yeong-Luh Ueng, and Wei-Min Lai
+                                [2014], “Table-Based Bit-Interleaved Coded Differential APM Scheme for Correlated Fading
+                                Channels,” in <i>Proc. IEEE/CIC International Conference on Communications in China
+                                    (ICCC2014)</i>, Shanghai, China, 13-15 Oct. 2014. (EI)
+                            </li>
+                            <li data-code="[C17]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Kuan-Chun Chen, and Yeong-Luh Ueng [2014],
+                                “Labelling and Code Design for Bit-interleaved Coded Differential Amplitude/Phase
+                                Modulation in Correlated Rayleigh Fading Channels,” in <i>Proc. 2014 IEEE 11th IEEE
+                                    Vehicular Technology Society Asia Pacific Wireless Communications Symposium
+                                    (APWCS2014)</i>, Ping Tung, Taiwan, 28-29 August, 2014. (EI).
+                            </li>
+                            <li data-code="[C16]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Kuan-Chun Chen, Yeong-Luh Ueng, Ruey-Yi Wei, and
+                                Jen-Yuan Hsu [2014], “EXIT-chart-based design method for noncoherent LDPC-coded
+                                modulation in correlated Rayleigh fading channels,” in <i>Proc. 2014 International
+                                    Conference on Control and Information Technology (ICCIT2014)</i>, Lushan, China,
+                                Jiangxi, 8-10 Aug. 2014. (EI).
+                            </li>
+                            <li data-code="[C15]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Hao-Lun Lo, Yeong-Luh Ueng, and Huang-Chang Lee,
+                                [2013]“A cooperative system using an adaptive relaying protocol and rateless codes,” in
+                                <i>Proc. IEEE 78th Vehicular Technology Conference (VTC2013-Fall)</i>, Las Vegas, USA,
+                                2-5 Sept. 2013. (EI)
+                            </li>
+                            <li data-code="[C14]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Chia-Wei Chen, Yeong-Luh Ueng, and Huang-Chang
+                                Lee, “Look-up table based differential amplitude/phase modulation schemes for Rayleigh
+                                block fading channels,” in <i>Proc. IEEE 78th Vehicular Technology Conference
+                                    (VTC2013-Fall)</i>, Las Vegas, USA, 2-5 Sept. 2013. (EI)
+                            </li>
+                            <li data-code="[C13]">
+                                Wei-Cheng Sun, <u><strong>Yen-Ming Chen</strong></u>, Chen-Yu Weng, Yeong-Luh Ueng,
+                                Jen-Yuan Hsuz, and Pangan Ting “An Efficient Implementation of the Distance-based
+                                Decoding for Block Turbo Codes,” in <i>Proc. 8th International Conference on
+                                    Communications and Networking in China (ChinaCom2013)</i>, Guilin, China, 14-14
+                                August 2013. (EI)
+                            </li>
+                            <li data-code="[C12]">
+                                Huang-Chang Lee, Chih-Wei Chan, Yeong-Luh Ueng, and <u><strong>Yen-Ming
+                                        Chen</strong></u>, “Generator matrix design and degree-oriented scheduling for
+                                the fast convergence of rateless codes,” in <i>Proc. IEEE Wireless Communications and
+                                    Networking Conference (WCNC 2013)</i>, Shanghai, China, 7-10 Apr. 2013. (EI)
+                            </li>
+                            <li data-code="[C11]">
+                                Huang-Chang Lee, <u><strong>Yen-Ming Chen</strong></u> and Yeong-Luh Ueng, “Incremental
+                                decoding with informed dynamic schedule and flooding refresh for rateless codes,” in
+                                <i>Proc. 2013 IEEE Taiwan/Hong Kong Joint Workshop on Information Theory and
+                                    Communications</i>, Hong Kong, 19-20 Jan. 2013.
+                            </li>
+                            <li data-code="[C10]">
+                                <u><strong>Yen-Ming Chen</strong></u> and Yeong-Luh Ueng, “A non-coherent MAP detector
+                                with very low detection complexity for coded USTM schemes,” in <i>Proc. 2013 IEEE
+                                    Taiwan/Hong Kong Joint Workshop on Information Theory and Communications</i>, Hong
+                                Kong, 19-20 Jan. 2013.
+                            </li>
+                            <li data-code="[C9]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Yeong-Luh Ueng, Hau-Jung Shiau, Dung-Rung Hsieh,
+                                Jen-Yuan Hsu, and Pangan Ting, [2012]“Noncoherent coded space-time modulation for a
+                                large number of transmit antennas,” in <i>Proc. ICCC 2012 : 1st IEEE International
+                                    Conference on Communications in China</i>, Beijing, China, 15-18 Aug. 2012. (EI)
+                            </li>
+                            <li data-code="[C8]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Huang-Chang Lee, Yeong-Luh Ueng, and Chin-Yun
+                                Yeh, [2012]“Flooding-assisted informed dynamic scheduling for rateless codes,” in
+                                <i>Proc. IEEE Wireless Communications and Networking Conference (WCNC 2012)</i>, Paris,
+                                France, 1-4 Apr. 2012. (EI)
+                            </li>
+                            <li data-code="[C7]">
+                                Yeong-Luh Ueng, and <u><strong>Yen-Ming Chen</strong></u>, [2011]“A low-complexity
+                                noncoherent MAP detector for turbo-coded unitary space-time modulation scheme,” in
+                                <i>Proc. 4<sup>th</sup> International Symposium on Applied Sciences in Biomedical and
+                                    Communication Technologies (ISABEL)</i>, Barcelona, Catalonia, Spain, 26-29 Oct.
+                                2011. (Invited Paper)
+                            </li>
+                            <li data-code="[C6]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Yeong-Luh Ueng, Jhong-Jheng Su, Jen-Yuan Hsu, and
+                                Pangan Ting, [2011]“A lower-complexity iterative trellis-based factor search algorithm
+                                and blind detector for PTS-based OFDM systems,” in <i>Proc. 8th International Conference
+                                    on Information, Communications and Signal Processing (ICICS)</i>, Singapore, 13-16
+                                Dec. 2011. (EI)
+                            </li>
+                            <li data-code="[C5]">
+                                Yeong-Luh Ueng, and <u><strong>Yen-Ming Chen</strong></u> [2010], “Coded MIMO systems
+                                for delay-sensitive applications,” in <i>proceedings of 6th Asia-Europe Workshop on on
+                                    Concepts in Information Theory (AEW6)</i>, Ishigaki Island, Okinawa, Japan, 22-24
+                                October 2010.
+                            </li>
+                            <li data-code="[C4]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Yeong-Luh Ueng, and Ying-Chen Chao [2010], “ A
+                                noncoherent coded MPSK scheme with near-capacity performance for channels with fast
+                                phase variation,” in <i>Proc. IEEE 71<sup>st</sup> Semiannual Vehicular Technology
+                                    Conference (VTC)</i>, Taipei, Taiwan, 16-19 May 2010. (EI)
+                            </li>
+                            <li data-code="[C3]">
+                                Yeong-Luh Ueng, <u><strong>Yen-Ming Chen</strong></u>, and Chang-Han Kuo [2009], “A
+                                codeword-interleaved transmission scheme with novel turbo equalization,” in <i>Proc.
+                                    2009 Fourth International Conference on Communications and Networking in China
+                                    (ChinaCom’ 09)</i>, Xi'an, China, 26-28 August 2009. (EI)
+                            </li>
+                            <li data-code="[C2]">
+                                Yeong-Luh Ueng and <u><strong>Yen-Ming Chen</strong></u> [2008], “A turbo coded MIMO
+                                scheme for noncoherent fast fading channels” in <i>Proc. IEEE 67<sup>st</sup> Semiannual
+                                    Vehicular Technology Conference (VTC)</i>, Marina Bay, Singapore, 11-14 May 2008.
+                                (EI)
+                            </li>
+                            <li data-code="[C1]">
+                                Ruey-Yi Wei, <u><strong>Yen-Ming Chen</strong></u> and C. C. Kuo [2006], “Further
+                                results on noncoherent block-coded MPSK,” in <i>Proc. IEEE International Conference on
+                                    Communications (ICC)</i>, Istanbul, 11-15 June 2006. (EI)
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Domestic Conference Papers</h3>
+                        <ul class="ref-list">
+                            <li data-code="[D3]">
+                                <u><strong>Yen-Ming Chen</strong></u> and Jian-Wei Chen, "A near-optimal SCMA codebook
+                                design for uplink Rayleigh fading channels," in <i>Proc. 2020 Taiwan Telecommunications
+                                    Annual Symposium</i>, Kaohsiung, Taiwan, Jan. 14-17, 2020.
+                            </li>
+                            <li data-code="[D2]">
+                                <u><strong>陳彥銘</strong></u>, 彭耀賢, 李志鵬, “使用碼簿輔助低複雜度接收器的高傳輸速率空間多工輔助廣義空間調變架構,” in <i>Proc.
+                                    2018 Taiwan Telecommunications Annual Symposium</i>, Taichung, Taiwan, Jan. 24-26,
+                                2019 .
+                            </li>
+                            <li data-code="[D1]">
+                                <u><strong>Yen-Ming Chen</strong></u>, I-Hsueh Li, Yeong-Luh Ueng, and Chih-Peng Li, “An
+                                LDPC-coded generalized spatial modulation scheme using a codebook-assisted
+                                low-complexity massive MIMO detector,” in <i>Proc. 2017 National Symposium on
+                                    Telecommunications</i>, Nantou, Taiwan, Jan. 21-23, 2017.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>US Patents</h3>
+                        <ul class="ref-list">
+                            <li data-code="[USP1]">
+                                <u><strong>Yen-Ming Chen</strong></u>, Hao-Liang Wen, Yu-Xiang Chen, and Kuo-Chun Lin,
+                                “Method and electrical device for training cross-domain classifier,” Patent No.: US
+                                12,400,429 B2, Date of Patent: Aug. 26, 2025.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Taiwan Patents</h3>
+                        <ul class="ref-list">
+                            <li data-code="[TP6]">
+                                吳峰蒼, <u><strong>陳彥銘</strong></u>, "用於產生不定長度錯誤更正碼之演算法及估算平均碼字長度的方法," 已領證, 專利證書號: I871049.
+                            </li>
+                            <li data-code="[TP5]">
+                                <u><strong>陳彥銘</strong></u>, 溫晧良, 陳鈺享, 林國鈞, "跨域分類器的訓練方法與電子裝置," 已獲證, 領證日期: 2024/6/1,
+                                專利證書號: I844284.
+                            </li>
+                            <li data-code="[TP4]">
+                                <u><strong>陳彥銘</strong></u>, 胡宸瑋, 黃柏綸, 李志鵬, “使用極化碼之通訊系統及其解碼方法" 已獲證, 領證日期: 2022/11/11,
+                                專利證書號: I783727.
+                            </li>
+                            <li data-code="[TP3]">
+                                <u><strong>陳彥銘</strong></u>, 吳峰蒼, 李志鵬, Pramod K. Varshney,
+                                “不定長度錯誤更正碼的設計方法、內儲程式之電腦程式產品及內儲程式之電腦可讀取記錄媒體," 已獲證, 領證日期: 2022/09/11, 專利證書號: I777659.
+                            </li>
+                            <li data-code="[TP2]">
+                                <u><strong>陳彥銘</strong></u>, 李志鵬, 陳健瑋, “設計稀疏碼多重接取碼本的方法及電腦程式產品”, 已獲證, 領證日期: 2021/10/01,
+                                專利證書號: I741509.
+                            </li>
+                            <li data-code="[TP1]">
+                                <u><strong>陳彥銘</strong></u>, 林國鈞, “虹膜辨識方法與電腦程式產品,” 已獲證, 領證日期: 2020/08/01, 專利證書號:
+                                I700604.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>NSTC Research Projects</h3>
+                        <ul class="ref-list">
+                            <li data-code="[NP14]">
+                                113學年度國科會推動規劃補助計畫(整合型), “6G中高頻高階MIMO行動通訊系統(3/4),” 計畫編號: NSTC 114-2218-E-110 -005 -
+                                (共同主持人)
+                            </li>
+                            <li data-code="[NP13]">
+                                114學年度科技部專題研究計畫, "從聯合訊源通道編碼到語義編碼：基於人工智慧的整合設計與研究," 計畫編號: NSTC 114-2221-E-110 -033 -
+                            </li>
+                            <li data-code="[NP12]">
+                                113學年度國科會推動規劃補助計畫(整合型), “智慧操控無人載具平台技術研發學研中心(4/4) ,” 計畫編號: NSTC 113-2218-E-110-006 -
+                                (共同主持人)
+                            </li>
+                            <li data-code="[NP11]">
+                                113學年度國科會專題研究計畫(一般策略專案計畫), “6G中高頻高階MIMO行動通訊系統(2/4) ,” 計畫編號: NSTC 113-2218-E-110-009 -
+                                (共同主持人)
+                            </li>
+                            <li data-code="[NP10]">
+                                113學年度國科會專題研究計畫(一般策略專案計畫), “基於中頻高頻段MIMO多天線系統之下世代終端及小基站通訊關鍵技術開發(4/4),” 計畫編號: NSTC
+                                113-2218-E-110-008 - (共同主持人)
+                            </li>
+                            <li data-code="[NP9]">
+                                112學年度國科會專題研究計畫(一般策略專案計畫), “6G中高頻高階MIMO行動通訊系統(1/4) ,”計畫編號: NSTC 112-2218-E-110-004-
+                                (共同主持人)
+                            </li>
+                            <li data-code="[NP8]">
+                                112學年度國科會專題研究計畫(一般策略專案計畫), “基於中頻高頻段MIMO多天線系統之下世代終端及小基站通訊關鍵技術開發(3/4),”計畫編號: NSTC
+                                112-2218-E-110-003- (共同主持人)
+                            </li>
+                            <li data-code="[NP7]">
+                                111學年度科技部<strong>優秀年輕學者研究計畫</strong>, "人工智慧與錯誤更正碼輔助高資訊安全與高辨識效能生物辨識架構設計," 計畫編號: MOST
+                                111-2628-E-110 -009 -MY3 (三年期計畫)
+                            </li>
+                            <li data-code="[NP6]">
+                                111學年度國科會專題研究計畫(一般策略專案計畫), "中頻高頻段MIMO多天線系統與結合MIMO可重置智慧表面平台開發及其系統驗證," 計畫編號: NSTC
+                                111-3114-E-110 -001 - (共同主持人)
+                            </li>
+                            <li data-code="[NP5]">
+                                111學年度國科會專題研究計畫(一般策略專案計畫), "基於中頻高頻段MIMO多天線系統之下世代終端及小基站通訊關鍵技術開發(2/4)," 計畫編號: NSTC
+                                111-2218-E-110 -003 - (四年期計畫) (共同主持人)
+                                <strong>(本計畫榮獲「下世代通訊系統關鍵技術研發專案計畫」111年度優異團隊)</strong>
+                            </li>
+                            <li data-code="[NP4]">
+                                110學年度科技部專題研究計畫, "稀疏碼多重接取架構的深入研究," 計畫編號: MOST 110-2221-E-110 -019 -
+                            </li>
+                            <li data-code="[NP3]">
+                                110學年度科技部專題研究計畫(一般策略專案計畫), "基於中頻高頻段MIMO多天線系統之下世代終端及小基站通訊關鍵技術開發(1/4)," 計畫編號: MOST
+                                110-2224-E-110 -001 - (四年期計畫)(共同主持人)
+                            </li>
+                            <li data-code="[NP2]">
+                                107學年度科技部新進人員研究計畫, “壓縮感知技術輔助低複雜度大規模多天線編碼傳輸架構設計,”計畫編號: MOST 107-2221-E-110-023-MY3
+                                (三年期計畫)
+                            </li>
+                            <li data-code="[NP1]">
+                                104學年度科技部新進人員研究計畫, “具高吞吐量之非同調合作式傳輸架構,” 計畫編號: MOST 104-2218-E-110-012-MY2 (兩年期計畫)
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>University-Industry Collaboration Projects</h3>
+                        <ul class="ref-list">
+                            <li data-code="[UIP4]">
+                                円通科技股份有限公司, “CCSDS related Channel Coding”.
+                            </li>
+                            <li data-code="[UIP3]">
+                                2021 Qualcomm Taiwan University Research Collaboration Project: “Advance Transceiver
+                                Design, Access Technique, and AI Research for the Next-generation Wireless Communication
+                                Systems”- AI-assisted Design of Error Correcting Strategies for the Next-generation
+                                Wireless Communication Systems.
+                            </li>
+                            <li data-code="[UIP2]">
+                                2020 Qualcomm Taiwan University Research Collaboration Project: “Advance mmWave
+                                Transceiver Design, Access Technique, and AI Research”- Further Research on the AI-Based
+                                Large-scale Sparse Code Multiple Access Schemes.
+                            </li>
+                            <li data-code="[UIP1]">
+                                2019 Qualcomm Taiwan University Research Collaboration Project: “Advance MIMO
+                                Transceiver Design, Access Technique, and AI Research”- AI-based SCMA Transceiver
+                                Design.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Other Research Projects</h3>
+                        <ul class="ref-list">
+                            <li data-code="[G1]">
+                                111學年度國防先進科技研究計畫, "離岸風機系統對航空器飛航安全影響與創新應用研究," (三年期計畫)(共同主持人)
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Master Thesis</h3>
+                        <ul style="list-style-type: square;">
+                            <li>
+                                <u><strong>Yen-Ming Chen</strong></u>, “Decoding algorithms for generalized noncoherent
+                                block-coded MPSK,'' master thesis, National Central University, Taipei, Taiwan, June
+                                2006.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Ph.D Dissertation</h3>
+                        <ul style="list-style-type: square;">
+                            <li>
+                                <u><strong>Yen-Ming Chen</strong></u>, “Coded noncoherent transmission schemes for
+                                near-capacity performance,'' Ph.D. dissertation, National Tsing Hua University, Hsinchu,
+                                Taiwan, Sept. 2011.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>其他成果</h3>
+                        <ol style="color: black;">
+                            <li>
+                                林進燈, <u><strong>陳彥銘</strong></u>, 游東龍, 陳青甫, “藍芽家庭自動化與門禁系統, ”
+                                九十學年度教育部大專院校通訊科技專題製作競賽無線組（晉級複賽並參與展示）
+                            </li>
+                            <li>
+                                Yeong-Luh Ueng, and <u><strong>Yen-Ming Chen</strong></u>, “Coded MIMO systems for
+                                delay-sensitive applications,” in Proc. 2011 Taiwan Winter School on Information Theory
+                                and Communications, Hsinchu, Taiwan, Jan. 17, 2011.
+                            </li>
+                        </ol>
+                    </section>
+                </div>
+                <div class="right-column"></div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="settings.js"></script>
+</body>
+
+</html>
