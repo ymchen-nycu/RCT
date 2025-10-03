@@ -346,8 +346,8 @@ footer {
 .contact-list li {
     margin-bottom: 4px;
     line-height: 1.4;
-    padding-left: 75px;
-    text-indent: -75px;
+    padding-left: 80px;
+    text-indent: -80px;
 }
 
 /* 地圖區塊 */
