@@ -1,0 +1,1446 @@
+/* === 全域設定：字體、間距、滾動行為 === */
+html,
+body {
+    font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+}
+
+/* === 歡迎畫面容器 === */
+#welcome-screen {
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    text-align: center;
+    z-index: 2000;
+    overflow: hidden;
+    animation: fadeOut 2s ease forwards;
+    animation-delay: 1s;
+}
+
+/* === 歡迎畫面背景圖 === */
+#welcome-screen img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+    z-index: -1;
+}
+
+/* === 歡迎畫面標題 === */
+#welcome-screen h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* === 歡迎畫面副標題 === */
+#welcome-screen p {
+    font-size: 2rem;
+    margin-top: 15px;
+    font-weight: 500;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* === 圖片來源註記 === */
+#welcome-screen .img-credit {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+/* === 淡出動畫 === */
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* === Header 樣式 === */
+header {
+    background-color: #005B96;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+/* === Header 容器 === */
+.header-container {
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 10px;
+    gap: 100px;
+    transition: padding 0.3s ease;
+}
+
+/* === 捲動後縮小高度 + 陰影 === */
+header.scrolled {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+header.scrolled .header-container {
+    padding: 8px 10px;
+}
+
+/* === Logo 區塊 === */
+
+.logo h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* === 導覽列容器 === */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+/* === 導覽列連結樣式 === */
+.nav a {
+    display: inline-block;
+    padding: 11px 17px;
+    border: 2px solid rgba(255, 255, 255, 0.55);
+    border-radius: 9999px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1;
+    transition: border-color .2s ease, background-color .2s ease, color .2s ease;
+}
+
+.nav a:hover {
+    border-width: 2.5px;
+    border-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.nav a:focus-visible {
+    outline: 2px solid #00E5FF;
+    outline-offset: 2px;
+    border-color: rgba(255, 255, 255, 0.85);
+}
+
+/* === QR Code 按鈕 === */
+.qr-btn {
+    padding: 4px 8px;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    background: #4CAF50;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.qr-btn:hover {
+    background: #3d8b40;
+    border-color: #3d8b40;
+}
+
+/* === Modal 背景 === */
+.qr-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 5000;
+}
+
+/* === Modal 顯示狀態 === */
+.qr-modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === Modal 內容 === */
+.qr-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+    width: 90%;
+}
+
+.qr-modal-content img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.qr-modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.qr-modal-content .close:hover {
+    color: #000;
+}
+
+/* === 桌機版：漢堡隱藏 === */
+.menu-toggle {
+    display: none;
+}
+
+/* === 手機版響應式 === */
+@media (max-width: 768px) {
+
+    .header-container {
+        padding: 18px 10px;
+        gap: 25px;
+    }
+
+    .logo h1 {
+        font-size: 1.35rem;
+        line-height: 1.1;
+    }
+
+    /* === 漢堡按鈕 === */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        z-index: 2100;
+    }
+
+    /* === 手機版下拉選單 === */
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: max-content;
+        background: #fff;
+        border: 1px solid #005B96;
+        border-radius: 4px;
+        padding: 8px 0;
+        z-index: 2000;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav ul.show {
+        display: flex;
+        animation: slideDown 0.25s ease;
+    }
+
+    .nav ul li {
+        text-align: left;
+    }
+
+    .nav ul li a {
+        display: block;
+        padding: 10px 16px;
+        font-size: 0.9rem;
+        color: #005B96;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .nav ul li a:hover {
+        background: #f0f8ff;
+        color: #003f6b;
+    }
+}
+
+/* === 下拉動畫 === */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Footer 整體樣式 ===== */
+footer {
+    background-color: #003B73;
+    color: #fff;
+    padding-top: 20px;
+}
+
+/* Footer 內容容器：限制寬度、排版 */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px 20px;
+    align-items: stretch;
+}
+
+/* 聯絡資訊區塊 */
+.contact-info {
+    flex: 1 1 250px;
+}
+
+/* 聯絡資訊標題 */
+.contact-info h3 {
+    margin-top: 0;
+}
+
+/* 聯絡資訊列表：清除預設樣式 */
+.contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 聯絡資訊列表項目：縮排對齊 */
+.contact-list li {
+    margin-bottom: 4px;
+    line-height: 1.4;
+    padding-left: 80px;
+    text-indent: -80px;
+}
+
+/* 地圖區塊 */
+.map {
+    flex: 2 1 400px;
+    min-height: 200px;
+}
+
+/* Footer 連結樣式 */
+footer a {
+    color: #00E5FF;
+    text-decoration: none;
+}
+
+/* Footer 連結 hover 效果 */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* 版權文字區塊 */
+footer .copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    background-color: #00264d;
+}
+
+/* ===== 浮動回到頂部按鈕（圓形固定樣式） ===== */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, opacity 0.3s;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* ===== 顯示狀態（滾動後出現） ===== */
+.back-to-top-btn.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ===== hover 效果（只變色，不縮放） ===== */
+.back-to-top-btn:hover {
+    background-color: #45a049;
+}
+
+/* ===== 針對index.html ===== */
+/* === 全域設定：字體、行高、顏色、對齊 === */
+body.home {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: justify;
+}
+
+/* === 圖片區塊外框 === */
+body.home .main-top-img-wrapper {
+    position: relative;
+    width: 90%;
+    margin: 0 auto 15px auto;
+    overflow: hidden;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* === 圖片本身樣式 === */
+body.home .main-top-img-wrapper .main-top-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* === 圖片來源註記 === */
+body.home .main-top-img-wrapper .img-credit {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+body.home .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body.home .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+body.home .slide.active {
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+
+/* === 底部指示點 === */
+body.home .main-top-img-wrapper .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+body.home .main-top-img-wrapper .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+body.home .main-top-img-wrapper .dot.active {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* === 主要內容：兩欄佈局 === */
+body.home .lab-layout {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+/* === 左欄：介紹區塊容器 === */
+body.home .lab-intro {
+    flex: 2 1 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* === 左欄：單一介紹卡片 === */
+body.home .intro-block {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* === 左欄：介紹文字段落 === */
+body.home .intro-block p {
+    margin: 0 0 0.4em 0;
+}
+
+/* === 藍色菱形標籤 === */
+body.home .intro-block p.label::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #0078d7;
+    transform: rotate(45deg);
+    margin-right: 8px;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+body.home .intro-block ol li,
+body.home .intro-block ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* 語言切換按鈕固定在右上角 */
+body.home .lang-switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+body.home .lang-switch button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    padding: 0 14px;
+    border: 2px solid #2e7d32;
+    background: #fff;
+    color: #2e7d32;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    line-height: 1;
+    margin: 0 3px;
+}
+
+body.home .lang-switch button.active {
+    background: #2e7d32;
+    color: #fff;
+}
+
+/* 語言顯示控制 */
+body.home .intro-block.en {
+    display: none;
+}
+
+body.home.lang-en .intro-block.zh {
+    display: none;
+}
+
+body.home.lang-en .intro-block.en {
+    display: block;
+}
+
+/* === 右欄：最新消息容器 === */
+body.home aside {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+/* === 右欄：NEWS 標題樣式 === */
+body.home aside h3 {
+    margin-top: 0;
+    display: inline-block;
+    padding: 4px 12px;
+    border: 2px solid orange;
+    border-radius: 6px;
+    background-color: #fff8f0;
+    font-weight: bold;
+}
+
+/* === 右欄：內嵌 iframe === */
+body.home aside iframe {
+    flex: 1;
+    width: 100%;
+    border: none;
+}
+
+/* === 最新消息列表 === */
+body.home .latest-news {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* === 最新消息列表項目 === */
+body.home .latest-news li {
+    margin-bottom: 8px;
+    border-bottom: 1px dashed #bbb;
+    padding-bottom: 6px;
+}
+
+/* === 最新消息列表中的超連結 === */
+body.home .latest-news li a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* === 最新消息列表最後一項 === */
+body.home .latest-news li:last-child {
+    border-bottom: none;
+}
+
+/* === 手機版響應式調整 === */
+@media (max-width: 768px) {
+    body.home .lab-layout {
+        flex-direction: column;
+    }
+
+    body.home .main-top-img-wrapper .main-top-img {
+        max-height: 170px;
+    }
+
+    body.home .lang-switch {
+        position: static;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    body.home .lang-switch button {
+        margin: 0 5px;
+    }
+
+    body.home aside {
+        min-height: 400px;
+    }
+}
+
+/* ===== Advisor 版型：整體設定 ===== */
+body.advisor {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fbfd;
+    color: #003B73;
+    text-align: justify;
+}
+
+/* ===== 第一部分：按鈕列容器 ===== */
+body.advisor .button-section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+/* ===== 按鈕樣式 ===== */
+body.advisor .button-section button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid #005B96;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #005B96;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* ===== 按鈕 hover/active 狀態 ===== */
+body.advisor .button-section button:hover,
+body.advisor .button-section button.active {
+    background-color: #005B96;
+    color: #fff;
+}
+
+/* ===== 第二部分：內容區塊容器 ===== */
+body.advisor .content {
+    display: none;
+    margin: 10px auto;
+    max-width: 1200px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+/* ===== 內容區塊啟用狀態 ===== */
+body.advisor .content.active {
+    display: block;
+}
+
+/* ===== 第三部分：兩欄排版容器 ===== */
+body.advisor .content-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* ===== 左欄 ===== */
+body.advisor .left-column {
+    flex: 2.5;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* ===== 左欄底線 ===== */
+body.advisor .left-column u {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* ===== 左欄內部 section 間距 ===== */
+body.advisor .left-column section {
+    margin-bottom: 20px;
+}
+
+/* ===== 左欄標題 ===== */
+body.advisor .left-column h3 {
+    margin: 0 0 8px 0;
+    color: #005B96;
+}
+
+/* ===== 左欄標題內 note 樣式 ===== */
+body.advisor .left-column h3 .note {
+    font-size: 0.85rem;
+    font-weight: normal;
+    color: #000;
+}
+
+/* ===== 左欄段落 ===== */
+body.advisor .left-column p {
+    margin: 0 0 16px 0;
+    color: #333;
+    text-indent: 2em;
+}
+
+/* ===== 左欄清單 ===== */
+body.advisor .left-column ul {
+    margin: 0 0 16px 0;
+    padding-left: 2em;
+    color: #333;
+}
+
+/* ===== 左欄清單項目間距 ===== */
+body.advisor .left-column li {
+    margin-bottom: 8px;
+}
+
+/* ===== 左欄清單符號顏色 ===== */
+body.advisor .left-column ul li::marker {
+    color: orange;
+}
+
+/* ===== 左欄 ref-list ===== */
+body.advisor .left-column .ref-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* ===== 左欄 ref-list 項目 ===== */
+body.advisor .left-column .ref-list li {
+    position: relative;
+    padding-left: 3.5em;
+    margin-bottom: 12px;
+}
+
+/* ===== 左欄 ref-list 項目前置標籤 ===== */
+body.advisor .left-column .ref-list li::before {
+    content: attr(data-code);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3.5em;
+    font-weight: bold;
+    color: #013220;
+}
+
+/* ===== 左欄有序清單 ===== */
+body.advisor .left-column ol {
+    padding-left: 2em;
+}
+
+/* ===== 右欄 ===== */
+body.advisor .right-column {
+    flex: 0 0 250px;
+    text-align: center;
+    font-size: 0.87rem;
+}
+
+/* ===== 右欄圖片 ===== */
+body.advisor .right-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* ===== 右欄圖片說明文字 ===== */
+body.advisor .right-column figcaption {
+    margin-top: 10px;
+    color: #556B2F;
+    text-align: left;
+}
+
+/* ===== 響應式 (RWD) ===== */
+@media (max-width: 768px) {
+
+    /* 兩欄改為直向排列 */
+    body.advisor .content-section {
+        flex-direction: column;
+    }
+
+    /* 手機版右欄排在上面 */
+    body.advisor .right-column {
+        order: 1;
+    }
+
+    /* 手機版左欄排在下面 */
+    body.advisor .left-column {
+        order: 2;
+    }
+
+    /* 手機版右欄圖片縮小 */
+    body.advisor .right-column img {
+        max-width: 60%;
+    }
+}
+
+/* ===== 研究介紹區塊：整體設定 ===== */
+body.research {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* ===== 版心容器 ===== */
+body.research .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* ===== 研究介紹文字區塊 ===== */
+body.research .research-intro {
+    line-height: 1.7;
+    color: #333;
+}
+
+/* ===== 清單樣式 ===== */
+body.research .research-intro ol {
+    margin: 0;
+    padding-left: 1.5em;
+}
+
+/* ===== li 裡的標題與標號 ===== */
+body.research .research-intro li>div>u,
+body.research .research-intro li::marker {
+    color: #005B96;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* ===== 標題獨立一行與下劃線 ===== */
+body.research .research-intro li>div>u {
+    font-size: 1.25rem;
+    display: block;
+    margin-top: 0.5em;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* ===== 段落裡的 u ===== */
+body.research .research-intro p u {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* ===== 段落樣式 ===== */
+body.research .research-intro p {
+    margin-bottom: 1em;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+/* ===== 語言切換控制 (顯示/隱藏) ===== */
+body.research .research-intro .zh,
+body.research .research-intro .en {
+    display: none;
+}
+
+body.research.lang-zh .research-intro .zh {
+    display: block;
+}
+
+body.research.lang-en .research-intro .en {
+    display: block;
+}
+
+/* ===== 語言切換按鈕容器 ===== */
+body.research .lang-switch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 0.5em;
+}
+
+/* ===== 語言切換按鈕樣式 ===== */
+body.research .lang-switch button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    padding: 0 14px;
+    margin-left: 6px;
+    border: 2px solid #2e7d32;
+    background: #fff;
+    color: #2e7d32;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    line-height: 1;
+}
+
+body.research .lang-switch button.active {
+    background: #2e7d32;
+    color: #fff;
+}
+
+body.research .gallery-section {
+    max-width: 1200px;
+}
+
+body.research .gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+body.research .gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    text-align: center;
+}
+
+body.research .gallery-item img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.research .gallery-item h4 {
+    margin: 10px 0;
+    color: #0056b3;
+}
+
+body.research .gallery-item .details-btn {
+    background: #2e7d32;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+body.research .gallery-item .details-btn:hover {
+    background: #256628;
+}
+
+/* Modal */
+body.research .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+body.research .modal.active {
+    display: flex;
+}
+
+body.research .modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 1000px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body.research .modal-content h3 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+body.research .modal-content p {
+    text-indent: 2em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* 手機版：每列一張 */
+@media (max-width: 768px) {
+    body.research .gallery-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* ===== RWD 響應式設定 ===== */
+@media (max-width: 768px) {
+    body.research .container {
+        padding: 0 25px 10px;
+    }
+
+    body.research .lang-switch {
+        position: static;
+        margin: 1em 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    body.research .lang-switch button {
+        flex: none;
+    }
+}
+
+/* ===== 主按鈕列：整體字體大小 ===== */
+body.members {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* ===== 主按鈕列：按鈕排列方式 ===== */
+body.members .button-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+/* ===== 主按鈕樣式 (Alumni / 其他主按鈕) ===== */
+body.members .main-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid #005B96;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #005B96;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+body.members .main-btn:hover {
+    background-color: #005B96;
+    color: #fff;
+}
+
+/* ===== 下拉容器 ===== */
+body.members .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* ===== 下拉內容區塊 ===== */
+body.members .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* 下拉選單內的按鈕樣式 */
+body.members .dropdown-content .main-btn {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    text-align: left;
+}
+
+/* 滑過下拉容器時顯示內容 */
+body.members .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ===== 預設圖片區塊 ===== */
+body.members #default-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+body.members #default-image figure {
+    margin: 0;
+    text-align: center;
+}
+
+body.members #default-image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 60vh;
+    height: auto;
+}
+
+body.members #default-image figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000;
+    line-height: 1.4;
+}
+
+/* ===== 共用圖片樣式 (預設圖 + 相簿圖) ===== */
+body.members #default-image img,
+body.members #photo-gallery img {
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    object-fit: contain;
+}
+
+/* ===== 相簿標題 ===== */
+body.members .gallery-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #005B96;
+    margin: 20px 0;
+}
+
+/* ===== 照片顯示區 ===== */
+body.members #photo-gallery {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body.members #photo-gallery figure {
+    flex: 1 1 300px;
+    max-width: 400px;
+    text-align: center;
+}
+
+body.members #photo-gallery img {
+    max-width: 100%;
+    max-height: 380px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+body.members #photo-gallery img:hover {
+    transform: scale(1.05);
+}
+
+body.members #photo-gallery figcaption {
+    margin-top: 8px;
+    color: #333;
+    line-height: 1.4;
+}
+
+body.members #photo-gallery figcaption h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    color: #005B96;
+}
+
+body.members #photo-gallery figcaption p {
+    margin: 0;
+    color: #555;
+    text-align: justify;
+}
+
+/* ===== 手機版 RWD ===== */
+@media (max-width: 768px) {
+
+    /* 預設圖片容器留邊距 */
+    body.members #default-image {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    /* 手機版圖片縮小比例 */
+    body.members #default-image img {
+        max-width: 80%;
+    }
+}
+
+body.album {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* ===== 年份按鈕列容器（置中排列年份按鈕） ===== */
+body.album .year-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+/* ===== 共用按鈕樣式（年份按鈕與返回按鈕共用） ===== */
+body.album .year-buttons button,
+body.album .back-btn {
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+/* ===== 年份按鈕樣式 ===== */
+body.album .year-buttons button {
+    border: 2px solid #005B96;
+    background-color: #fff;
+    color: #005B96;
+    padding: 8px 18px;
+}
+
+/* ===== 年份按鈕 hover 與 active 狀態 ===== */
+body.album .year-buttons button:hover,
+body.album .year-buttons button.active {
+    background-color: #005B96;
+    color: #fff;
+}
+
+/* ===== 返回按鈕樣式 ===== */
+body.album .back-btn {
+    display: block;
+    margin: 30px auto 10px auto;
+    padding: 10px 20px;
+    background-color: #005B96;
+    color: #fff;
+    border: none;
+}
+
+/* ===== 返回按鈕 hover 狀態 ===== */
+body.album .back-btn:hover {
+    background-color: #003f6b;
+}
+
+/* ===== 活動/相片列表容器 ===== */
+body.album .gallery {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* ===== 單一相片項目 ===== */
+body.album .gallery-item {
+    text-align: center;
+    max-width: 320px;
+    width: 100%;
+}
+
+/* ===== 共用圖片樣式（縮圖與 Lightbox 大圖） ===== */
+body.album .gallery-item img,
+body.album .lightbox-img {
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== 縮圖樣式 ===== */
+body.album .gallery-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* ===== 縮圖 hover 放大效果 ===== */
+body.album .gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== 照片標題文字 ===== */
+body.album .gallery-item h3 {
+    margin-top: 10px;
+    font-weight: 700;
+    color: #005B96;
+}
+
+/* ===== RWD 響應式調整（中尺寸螢幕） ===== */
+@media (max-width: 900px) {
+    body.album .gallery {
+        gap: 24px;
+    }
+}
+
+/* ===== RWD 響應式調整（小尺寸螢幕） ===== */
+@media (max-width: 600px) {
+    body.album .gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* ===== Lightbox 放大相片背景遮罩 ===== */
+body.album .lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* ===== Lightbox 大圖樣式 ===== */
+body.album .lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 0.3s ease;
+}
+
+/* ===== Lightbox 左右切換按鈕 ===== */
+body.album .lightbox-prev,
+body.album .lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 91, 150, 0.7);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 10000;
+}
+
+/* ===== Lightbox 左右切換按鈕 hover 狀態 ===== */
+body.album .lightbox-prev:hover,
+body.album .lightbox-next:hover {
+    background: rgba(0, 91, 150, 0.9);
+    transform: translateY(-50%) scale(1.15);
+}
+
+/* ===== Lightbox 左右按鈕位置 ===== */
+body.album .lightbox-prev {
+    left: 30px;
+}
+
+body.album .lightbox-next {
+    right: 30px;
+}
+
+/* ===== Lightbox 放大動畫 ===== */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYCU RCT LAB</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+</head>
+
+<body class="research">
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="research-intro container">
+            <div class="lang-switch">
+                <button id="btn-zh" class="active">中文</button>
+                <button id="btn-en">English</button>
+            </div>
+
+            <ol>
+                <li>
+                    <div class="zh">
+                        <u>下世代通訊非正交多工架構設計</u>
+                        <p>
+                            在下世代通訊系統的相關研究中，非正交多重接取(Non-Orthogonal Multiple
+                            Access，NOMA)利用非正交的疊加技術，在既定的頻寬上能支援更多的用戶使用，而稀疏編碼多重存取(Sparse Code Multiple Access,
+                            SCMA)則是碼域上的非正交多重接取技術，也是目前廣受學術界與工業矚目的一項嶄新技術。作為下世代非正交多重接取候選技術之一，許多SCMA架構廣泛被討論。然而關於此技術先前尚未有詳盡的設計與數學分析。在近年本研究團隊主要聚焦在SCMA技術上，已完成在AWGN通道、上行鏈路雷利/萊斯衰退通道、以及下行鏈路雷利/萊斯衰退通道等數種不同通道環境下的設計準則推導以及效能分析，並提出趨近最佳的碼簿。我們接著引進人工智慧中強化學習（Reinforcement
+                            Learning）的技術，進行碼簿的進階設計。接著，我們更進一步探討MIMO-SCMA架構的最佳碼簿與相對應之接收器的設計，並針對SCMA-OFDM系統中的PAPR問題提出可提供低PAPR並兼顧優秀錯誤效能的碼簿與相對應之接收器設計。由於稀疏編碼多重存取的碼簿設計議題牽涉許多複雜的層面，此部分的研究成果在非正交多重接取相關研究中是一項亮點，相關研究也曾獲<u>IEEE
+                                ITSOC暨COMSOC台北/台南支會年輕學者最佳論文獎的肯定</u>。非正交多工相關研究成果已收錄在[J14],[J15],[J17],[J18],[J19],[J20],[J21],[J27]中，並有一項專利[TP2]已獲證。
+                        </p>
+                    </div>
+                    <div class="en">
+                        <u>Next-Generation Non-Orthogonal Multiple Access Schemes</u>
+                        <p>
+                            In next-generation communication systems, Non-Orthogonal Multiple Access (NOMA) employs
+                            superposition techniques to support more users within limited resources. Sparse Code
+                            Multiple Access (SCMA), a code-domain non-orthogonal multiple access technique, has also
+                            drawn significant attention from academia and industry as an emerging technology. As one of
+                            the candidate technologies for next-generation non-orthogonal multiple access, various SCMA
+                            architectures have been extensively discussed. However, detailed design and mathematical
+                            analyses of this technology have been limited.
+                        </p>
+                        <p>
+                            In recent years, our research team has mainly focused on SCMA technology, deriving design
+                            criteria and conducting performance analyses under different channel environments, including
+                            AWGN channels, uplink Rayleigh/Rician fading channels, and downlink Rayleigh/Rician fading
+                            channels, and proposing near-optimal codebooks accordingly. Building upon this, we
+                            introduced reinforcement learning techniques from artificial intelligence to further enhance
+                            codebook design. Moreover, we explored optimal codebook design and corresponding receiver
+                            architectures for MIMO-SCMA, and addressed the PAPR problem in SCMA-OFDM systems by
+                            proposing codebooks and receivers that achieve both low PAPR and excellent error
+                            performance.
+                        </p>
+                        <p>
+                            Since codebook design in SCMA involves many complex aspects, our contributions in this area
+                            represent a highlight within the broader field of NOMA research. Related works have been
+                            recognized with the <u>IEEE ITSOC/COMSOC Taipei/Tainan Chapter Best Paper Award for Young
+                                Scholars</u>. Research outcomes on non-orthogonal multiple access have been published in
+                            [J14], [J15], [J17], [J18], [J19], [J20], [J21] and [J27], with one granted patent [TP2].
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="zh">
+                        <u>結合訊號源與通道編碼設計</u>
+                        <p>
+                            此方向為本人近年積極投入的研究方向。在有嚴格系統延遲性和硬體複雜度限制的情況下，訊息與通道編碼的聯合設計相較於分開設計的架構具有顯著的效能改善。作為一種短碼長聯合訊息與通道編碼(Joint
+                            Source and Channel Coding)，長度可變錯誤更正碼(Variable Length Error-correcting Codes,
+                            VLEC)具有優秀的資料壓縮能力與錯誤更正能力。在先前的研究中，學者們希望能夠開發出接近最佳的長度可變錯誤更正碼。而＂最佳＂在此定義為在具有相同的自由距離(Free
+                            Distance)限制之下，具有最短平均碼長。亦即希望在一定量的錯誤保護之下，訊息壓縮率能盡量提高。然而，VLEC碼簿的建立須滿足數個距離上的限制。在大型的訊號集上想要找到超越現今成果並具極短碼長的VLEC碼簿，需要相當曠日廢時的搜尋時間，且不易成功。因此長久以來此研究領域的進展緩慢，是一個具挑戰性的研究方向。
+                        </p>
+                        <p>
+                            在此研究方向上，我們首先開發了一種使用交叉熵(Cross
+                            Entropy)並搭配長度可變錯誤更正碼的距離限制所設計的亂數搜尋演算法，成功的將碼長繼續向下推進到近似最佳的最短碼長，並且可為大小為128的訊號集設計出適用的長度可變錯誤更正碼。接著，我們進一步在VLEC的基本特性研究上有所突破，可以進一步將搜尋複雜度大幅降低，不但能藉此將所設計平均碼長進一步降低，演算法低複雜度的特性讓我們可以輕易地為大規模的消息源做碼搜尋。最後，我們進一步提出改善錯誤率的搜尋法則。
+                        </p>
+                        <p>
+                            在近期的研究中，我們更進一步發現訊號源機率分布與VLEC的建構之間的關係，是長期以來被忽略的議題。目前我們也正朝此方向積極進行研究。<u>在此領域中，此研究是首次能成功為大規模的消息源進行碼設計，且對於不同訊號源機率分布具調適性，均可得到趨近最佳的設計，在此研究領域上是相當重要的突破</u>。此部分相關的研究成果已收錄在[J13][J16][J28]中，並有兩項專利[TP3][TP6]已獲證。
+                        </p>
+                    </div>
+                    <div class="en">
+                        <u>Joint Source and Channel Coding</u>
+                        <p>
+                            This direction has been a major focus of our research in recent years. Under strict system
+                            delay and hardware complexity constraints, joint design of source and channel coding can
+                            achieve significant performance improvements compared to separate designs. As a type of
+                            short-block-length Joint Source and Channel Coding (JSCC), Variable Length Error-Correcting
+                            Codes (VLEC) provide strong data compression capability alongside error correction
+                            performance. Previous research sought to develop near-optimal VLECs, where “optimal” is
+                            defined as achieving the shortest average code length under the same free distance
+                            constraint, thereby maximizing compression while maintaining a required level of
+                            error protection. However, constructing VLEC codebooks requires satisfying several distance
+                            constraints. For large signal sets, searching for VLECs with extremely short code lengths
+                            has long been a time-consuming and challenging task, limiting progress in this area.
+                        </p>
+                        <p>
+                            In our research, we first developed a randomized search algorithm based on cross-entropy
+                            combined with distance constraints of VLECs, successfully pushing average code length closer
+                            to the theoretical minimum. This method enabled the design of VLECs for signal sets as large
+                            as 128 symbols. Subsequently, we achieved breakthroughs in the fundamental properties of
+                            VLECs, dramatically reducing search complexity. This allowed us not only to further reduce
+                            average code length but also to scale designs for large signal sources with ease. We further
+                            proposed search strategies that improved error rate performance.
+                        </p>
+                        <p>
+                            More recently, we discovered a previously overlooked relationship between the probability
+                            distribution of the source and VLEC construction. <u>By exploiting this connection, we
+                                successfully designed VLECs for large-scale sources with adaptability to different
+                                source distributions, achieving near-optimal performance. This represents a significant
+                                breakthrough in this research area</u>. Relevant results have been published in [J13],
+                            [J16], and [J28], with two patents [TP3], [TP6] granted.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="zh">
+                        <u>人工智慧與錯誤更正碼輔助高資訊安全與高辨識效能生物辨識架構設計</u>
+                        <p>
+                            生物辨識與資訊安全領域為本團隊近年投入的研究領域，相關研究曾獲<u>國科會三年期優秀年輕學者研究計畫</u>補助，且榮獲<u>2024鴻海科技獎</u>的肯定。在生物辨識的安全性議題上，由於量測雜訊(measure
+                            noise)的存在，使得系統很難使用雜湊函式(Hash
+                            Function)來確保生物資訊的隱密性。再者，若我們進一步考慮錯誤更正碼技術以進行資料還原與更正，使得雜湊函式可以順利運行，又會因為虹膜碼本身的特性而面臨安全位元(Security
+                            Bits)嚴重不足的情況。在此研究方向上，我們首先提出一種為虹膜碼位元萃取軟式特徵值的方法，並基於此方法繼續延伸設計相關架構，做到顯著提升所使用LDPC碼的錯誤更正能力，卻又能同時避免碼率的降低，進而增加安全位元的數目。我們進一步提出虹膜碼決定性特徵點(Dominating
+                            Feature Points,
+                            DFPs)的選擇方式，以突破原始虹膜碼物理特性上的限制，進而大幅度的提升安全位元數目。據我們所知，<u>本研究是第一個在基於錯誤更正攻擊的假設下，在各個公共虹膜資料庫中實現安全位元為正值的錯誤更正碼輔助虹膜辨識系統</u>。最後，我們針對較為貼近現實、品質較差或較遠距離拍攝的虹膜資料庫，提出一種利用高斯模糊的決定性特徵點增量技術，在使用低品質的虹膜資料庫的情況中大幅度提升安全位元數目，使得所設計之系統更具實用價值。
+                        </p>
+                        <p>
+                            在此研究方向上我們已獲得兩項專利[TP1][TP5]，並有兩篇IEEE期刊論文[J22][J23]已刊出，一篇IEEE期刊論文[J29]準備中。
+                        </p>
+                    </div>
+                    <div class="en">
+                        <u>AI- and ECC-Assisted High-Security and High-Recognition
+                            Biometric Systems</u>
+                        <p>
+                            Biometrics and information security have become important areas of focus for our team in
+                            recent years. This line of research has been <u>supported by the National Science and
+                                Technology Council’s three-year Project for Excellent Junior Research Investigators and
+                                recognized with the 2024 Hon Hai Technology Award</u>.
+                        </p>
+                        <p>
+                            In biometric security, the presence of measurement noise makes it difficult to directly use
+                            hash functions to protect biometric information. Incorporating error-correcting codes (ECC)
+                            for data reconstruction and correction allows hash functions to operate properly, but iris
+                            codes inherently suffer from insufficient security bits.
+                        </p>
+                        <p>
+                            To address this, we first proposed a method for extracting soft feature values of iris
+                            codes, which significantly enhanced the error correction capability of LDPC codes without
+                            reducing code rate, thereby increasing the number of security bits. We further introduced a
+                            method for selecting Dominating Feature Points (DFPs) of iris codes, overcoming inherent
+                            limitations of iris code characteristics and dramatically increasing the number of security
+                            bits. <u>To our knowledge, this is the first ECC-assisted iris recognition system that
+                                achieves positive security bits under error-correction attack assumptions across
+                                multiple public iris databases</u>.
+                        </p>
+                        <p>
+                            Finally, for low-quality or long-distance iris databases that more closely resemble
+                            real-world conditions, we proposed a Gaussian blur-based incremental DFP technique. This
+                            method substantially increases the number of security bits even with poor-quality datasets,
+                            improving the system’s practicality.
+                        </p>
+                        <p>
+                            This line of research has resulted in two granted patents [TP1], [TP5], two published IEEE
+                            journal papers [J22], [J23], and one IEEE journal paper [J29] currently in preparation.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="zh">
+                        <u>多天線系統與合作式通訊系統演算法與硬體實現</u>
+                        <p>
+                            在傳統多輸入多輸出系統的解調上，最大相似性(ML)偵測器可以提供最佳的錯誤效能，但也具有極高的複雜度。因此許多低複雜度的線性偵測器，例如zero-forcing或MMSE
+                            偵測器廣泛被使用。但這些偵測器在使用高階調變的情況下錯誤率並不理想。另一方面，基於樹狀搜索的許多球體解碼器的變形，例如FSD和K-Best偵測器，可以提供複雜度和近似ML錯誤率之間的trade-off。然而上數的偵測器皆為硬式輸出的偵測器，若需要針對每個資訊位元產出軟式偵測值以便於和外部錯誤更正碼整合，則會遇到一項名為位元空隙(bit
+                            vacancy,
+                            BV)的問題。因為上述的硬式輸出偵測器針對任意資訊位元都只有單一偵測值與相關的計值(metric)大小，而缺乏另一偵測值的計值。針對MIMO偵測器的此一基本問題，我們已經提出一種嶄新的基於樹狀搜索的軟式輸出FSD偵測器，不僅在高訊雜比區可趨近使用最佳列表球體解碼器(list
+                            sphere decoder, LSD)的錯誤效能，同時也具有低運算複雜度。我們進一步提出了高度平行架構，並<u>使用TSMC
+                                90nm技術來進行硬體實現</u>，其特殊架構也提供了大量硬體複雜度的下降。據我們所知，<u>本研究成果也是第一個可支援至8x8
+                                MIMO系統、1024-QAM的硬體實現成果</u>。此方面的詳細成果已在近期於B5G/6G Advanced Communication Technology
+                            Workshop成果發表會中發表，並已投出一篇IEEE期刊論文[J25]。
+                        </p>
+                        <p>
+                            另一方面，針對廣義空時移位鍵入(generalized space shift keying, GSSK)、廣義空間調變(generalized spatial modulation,
+                            GSM)、廣義區塊空間調變(generalized block-based spatial modulation,
+                            GBSM)等架構，我們都提出了複雜度相當低的MIMO偵測器設計。比起傳統的最大相似度偵測器，所提出的MIMO偵測器在各情況下均可帶來至少95%以上的複雜度下降，相當具有實務應用上的潛力。而在合作式(Cooperative)通訊系統方面，使用分散式么正空時調變(
+                            unitary space-time modulation, USTM)訊號，我們提出了兩種使用解碼轉傳與放大轉傳(amplify-and-forward,
+                            AF)的非同調合作式通訊架構。當操作在具有一個傳送端，一個接收端，以及兩個中繼端點的環境下，我們設計了其非同調分散式訊號以及轉傳協定。更進一步的，為了最大化整體系統吞吐量，一種結合外部編碼設計以及傳送訊號設計的聯合設計方法也被提出來。此部分相關的研究成果已收錄在[J8]-[J10],[J12],[J24]中。
+                        </p>
+                    </div>
+                    <div class="en">
+                        <u>Algorithms and Hardware Implementations for Multi-Antenna and Cooperative Communication
+                            Systems</u>
+                        <p>
+                            In conventional MIMO systems, maximum likelihood (ML) detectors provide optimal error
+                            performance but suffer from prohibitively high complexity. As a result, many low-complexity
+                            linear detectors, such as Zero-Forcing and MMSE, are widely used. However, these detectors
+                            yield unsatisfactory error rates under high-order modulation. On the other hand,
+                            tree-search-based sphere decoders (such as FSD and K-Best) offer a trade-off between
+                            complexity and near-ML error performance, but most are hard-output detectors. When soft
+                            outputs are required for integration with external ECC, they encounter the bit vacancy (BV)
+                            problem, as they only provide a single detection value and metric per bit.
+                        </p>
+                        <p>
+                            To address this, we proposed a novel tree-search-based soft-output FSD detector. It achieves
+                            near-LSD (list sphere decoder) error performance in high-SNR regions while maintaining low
+                            computational complexity. <u>Furthermore, we designed a highly parallel architecture and
+                                implemented it in TSMC 90nm technology, achieving substantial reductions in hardware
+                                complexity. To our knowledge, this is the first hardware implementation supporting up to
+                                8×8 MIMO systems with 1024-QAM</u>. Detailed results were presented at the B5G/6G
+                            Advanced Communication Technology Workshop and submitted to an IEEE journal [J25].
+                        </p>
+                        <p>
+                            Additionally, for architectures such as generalized space shift keying (GSSK), generalized
+                            spatial modulation (GSM), and generalized block-based spatial modulation (GBSM), we
+                            developed extremely low-complexity MIMO detector designs. Compared to traditional ML
+                            detectors, our proposed designs achieve at least a 95% reduction in complexity, making them
+                            highly practical. In cooperative communication systems, using unitary space-time modulation
+                            (USTM) signals, we proposed two non-coherent cooperative communication architectures
+                            employing decode-and-forward and amplify-and-forward relaying. For systems with one
+                            transmitter, one receiver, and two relays, we designed non-coherent distributed signals and
+                            relaying protocols. To maximize system throughput, we further proposed a joint design method
+                            combining external coding with signal design. These results have been published in
+                            [J8]–[J10], [J12], and [J24].
+                        </p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section class="gallery-section container">
+            <div class="gallery-row">
+                <div class="gallery-item">
+                    <img src="images/Research/500491777_resized.jpg" alt="Sample 1">
+                    <h4>SEMANTIC JOINT SOURCE CHANNEL CODING</h4>
+                    <button class="details-btn" data-title="Semantic Joint Source Channel Coding"
+                        data-text="<p>Shannon在消息理論中提出，訊息編碼與通道編碼可分開設計與實現而不會影響整體系統的最佳性。然而，此結論是漸進式的，而且是基於無限制的碼長與編碼延遲等假設。在許多貼近現實的環境中，將兩種編碼過程整合於單一設計的聯合訊源通道編碼(Joint Source Channel Coding, JSCC)已被證實優於分開設計的系統，尤其是在具有嚴格解碼延遲與硬體複雜度限制的系統。而作為一種JSCC，長度可變錯誤更正 (Variable Length Error Correcting, VLEC) 碼具有低複雜度、優秀的資料壓縮能力以及錯誤更正能力。在先前的研究中，學者們希望能夠開發出趨近最佳的VLEC碼。此「最佳」的定義是指在具有相同的自由距離(Free Distance)限制之下，可得到最短的平均碼長。然而，VLEC碼簿的建立須滿足數個距離上的限制。在大規模的訊號集上想要找到超越現今成果並具極短碼長的VLEC碼簿，需要曠日廢時的搜尋時間，且不易成功。因此長久以來此研究領域的進展緩慢，是一個具挑戰性的研究方向。</p><p>另一方面，Shannon 和 Weaver 曾提出通訊理論的一般性定義，其中包括三個層次的問題：技術(Technical)問題、語義(Semantic)問題和效能(Effectiveness)問題。在經典的數位通訊系統中，不論訊息編碼或通道編碼，皆僅使用統計特性來解決技術問題。例如傳統的訊息編碼利用訊號源統計特性，通道編碼則緊隨其後，以保護符號免受傳輸錯誤的影響。然而高層次的信息則被忽視，特別是對於具結構化的訊號源，如圖像和文本。與經典的聯合訊源通道編碼相比，我們認為發展可對語義信息進行編碼的語義聯合訊源通道編碼（Semantic Joint Source Channel Coding）可以更有效地處理信息的傳收。</p><p>我們目前已在VLEC的研究方向上有了相當重要的成果。基於亂數搜尋演算法以及VLEC基本特性的理論研究上突破性的進展，我們已可將設計複雜度大幅降低，不但能將所設計的VLEC平均碼長大幅度縮短到近似最佳的極短碼長，且已可輕易地為大規模碼簿進行碼搜尋。所得到的VLEC碼簿，在碼長與錯誤率兩方面的表現上都有了顯著的提升，是此研究領域上相當重要的突破。基於這方面的成果，在進階的研究中，我們首先著眼於對於不同的訊號源機率分布，都能建立近似最佳的VLEC碼簿。接著，我們會將VLEC碼簿與傳統強大的通道編碼做整合設計，建立嶄新的聯合訊源通道編碼架構。在第三階段，我們會結合在JSCC上已有的基礎，以半神經元模型半確定性編碼架構的模型基礎，去建構嶄新的的語義聯合訊源通道編碼設計。由於此方向的研究相當具挑戰性，非常歡迎對語義聯合訊源通道編碼此一前瞻性議題有興趣的朋友加入我們的研究團隊！</p>">DETAILS</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Research/Puzzle (2)_resized.jpg" alt="Sample 2">
+                    <h4>NONCOHERENT DETECTION</h4>
+                    <button class="details-btn" data-title="Noncoherent Detection"
+                        data-text="<p>在一般的通訊系統的設計，常常基於通道資訊在接收端完美已知的假設之下進行討論，或假設通道估計可完美的進行。然而，在現實的無線通道環境中，傳送端與接收端的移動性(mobility)，相位同步問題，以及其它可能的因素常會導致未知且時變的衰退通道。尤其在通道變化快速的形況下，接收端往往難以做到精確的通道估計。</p><p>通道估計問題在許多情況下將特別難以實現。例如在分散式多輸入多輸出系統中，為了形成一個虛擬天線陣列，我們必須將傳送資訊可靠的傳遞到每個中繼端點，這暗示了精確通道估計必須在每個中繼端點（虛擬傳送天線）上被實現。在快速衰退通道下，我們需要使用相當多的嚮導信號（pilot symbol）來達到精確通道估計的效果。如此一來將導致頻寬和傳送能量上的浪費，然而，這兩項卻恰恰是在行動裝置上十分珍貴的資源。另外，在現今5G的候選技術中，大規模多天線(Massive MIMO)系統是一個相當受矚目的技術，預計可顯著的提升系統吞吐量與傳輸可靠度。然而，在一個大規模多天線系統中，由於通道鏈結為數眾多，花費在通道估測上所需嚮導訊號將造成大量能量與頻寬上的浪費。因此，通道估測實行上的困難成為大規模多天線系統實現上所將面對的一個重要議題。</p><p>因此，為了解決複雜的通道估測問題，非同調(Noncoherent)通訊架構，即，在傳送端與接收端都不需要通道資訊的假設下的系統，是一個可能的解決方案。</p><p>透過非同調訊號與相對應接收機的設計，接收端不需進行通道估測，依然可以進行訊號解調。然而，在MIMO環境下，當傳送天線的數量增加，非同調架構的設計依然面臨兩個極具挑戰性的難題：第一個問題是在文獻中提到，在非同調區塊衰退通道下，為了達到全分集(full diversity)，所設計的訊號矩陣時間長度須為傳送天線的兩倍。如此一來若考慮大規模的傳送天線數量，將與基於通道估測的系統相似，遭受較長的訊號延遲與頻寬效益上的浪費。另一個問題是，傳統非同調訊號的設計通常不具有良好的結構性，且使用最大相似性（maximum likelihood, ML）偵測器來進行訊號解調。在考慮較長的訊號矩陣時間長度且較高的調變率(modulation rate)的情形下，使用最大相似性偵測器將帶來極高的解調複雜度。因此，以上兩個議題將是非同調大規模多天線系統設計上極具挑戰性的難題。</p><p>本實驗室長期以來在非同調通訊的研究上已有相當成果，目前的研究方向著重在結合壓縮感知 (compressed sensing)的相關技術，進行低複雜度非同調大規模多天線編碼傳輸架構設計。歡迎有興趣的新生加入本研究群的行列！</p>">DETAILS</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Research/SCMA.jpg" alt="Sample 3">
+                    <h4>NON-ORTHOGONAL MULTI-ACCESS</h4>
+                    <button class="details-btn" data-title="Non-Orthogonal Multi-Access"
+                        data-text="<p>NOMA被認為是5G和Beyond 5G有力的候選方案，而與傳統的OMA方案相反，NOMA的主要區別特徵是在非正交(Non-Orthogonal)資源分配的輔助下，與正交(Orthogonal)資源相比，它支援的用戶數更多，而此技術會通過消除用戶間複雜的干擾來實現支援更多的用戶數，但也因此增加接收機的複雜度為代價。</p><p>而在傳統的4G網絡中，正交頻分多址（OFDMA）作為OFDM自然延伸的技術，其中將每個用戶的信息分配給子載波的子集。另外在NOMA中，每個用戶都可以使用所有子載波。現今因為進階多媒體應用（例如，超高清視頻，虛擬實境(VR)等）所需的無線網路速度迅速提升，以及物聯網（IoT）所要求的用戶訪問需求急劇增長，第五代（5G）網絡在支持大規模數據流量方面面臨挑戰。而非正交多址（NOMA）是第三代合作夥伴計劃長期演進（3GPP-LTE-A）所提出的一種有發展性的技術。現有的NOMA依賴於 power-domain 或 code-domain 的復用(multiplexing)，因此能夠借助非正交資源共享來提高頻譜效率。而且，NOMA這個技術能夠在等級不足(rank-deficient)的情況下運行，從而有助於支持大規模連接，所以NOMA被認為是一個非常有潛力的5G候選方案。</p><p>在code-domain上，NOMA的相關技術有低密度簽記(LDS)、疏碼多工存取(SCMA)、模式多重接取(PDMA)，低密度簽記是一種低密度版本的CDMA。使得我們可以用可行複雜度的接收機來達到近似MAP的性能。而SCMA則是希望改善LDS的錯誤率性能，同時保留低密度的特性使得一樣能合理使用近似MAP性能的接收機。跟LDS步驟最大的不同在於位元轉換成星座符元的映射以及擴展成會合併在一起的SCMA碼本映射。所以位元會透過SCMA碼本轉換成多維度的碼字。每個用戶會有自己專門的碼本，所以SCMA可以想成是一個二進位維度變成多維的複數維度編碼流程。與CDMA相比，多維度碼字調變技術的星座成型增益(constellation shaping gain)是主要優勢所在。</p><p>而在power-domain上，NOMA的分集增益(diversity gain)主要源自於傳輸訊號在power-domain上的功率疊加，已經有許多研究結果(例如，outage probability、achievable capacity、weak users’ rate guarantees、 cell-edge user experiences)顯示有利於NOMA。</p><p>此外，在傳送端完美的SC、在接收端的零錯誤SIC、最佳化功率分配、面向QoS使用者保障、適當的用戶配對以及良好的鏈路適應性，皆可為NOMA提供最大的優勢。</p><p>本實驗室長期以來在頻譜利用效率的通訊研究上已有相當成果，目前的研究方向著重在疏碼多工存取(SCMA)的相關技術，透過AI來尋找更好的SCMA碼本來達成錯誤率下降。歡迎有興趣的新生加入本研究群的行列！</p>">DETAILS</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Research/shutterstock_175690007_resized.jpg" alt="Sample 4">
+                    <h4>CRYPTOSYSTEM ON BIOMETRIC</h4>
+                    <button class="details-btn" data-title="Cryptosystem on Biometric"
+                        data-text="<p>雖然以指紋、虹膜為代表的生物辨識系統，在辨識精確度和速度上已經可以滿足實用的要求，但是系統的安全性卻不一定能得到可靠的保證。以指紋為例，傳統的指紋辨識系統大多數採用細節點(minutiae)作為辨識的特徵，並且將細節點位置、方向等資訊以裸資料的形式儲存作為範本(Template)以便比對。通常人們認為，該儲存的範本內容是指紋細節點資訊，而不是原始的指紋影像，不會洩漏原始的指紋資訊。然而，已有研究成果表明，攻擊者能以成功率高於95%的機率，從指紋細節資料恢復出原始的指紋影像，進而用該影像攻擊原系統。另一方面，生物特徵的持久性和穩定性使得它能伴隨人的一生，然而一旦丟失，將導致永久性傷害，因為一但被成功攻擊，該生物特徵將永久不可用。人的生物特徵是有限的，不像密碼或者身分卡可以隨意撤銷更改。由此可見，在這樣的應用環境中，生物特徵的固有性反而成為了缺陷。</p><p>雖然以指紋、虹膜為代表的生物辨識系統，在辨識精確度和速度上已經可以滿足實用的要求，但是系統的安全性卻不一定能得到可靠的保證。以指紋為例，傳統的指紋辨識系統大多數採用細節點(minutiae)作為辨識的特徵，並且將細節點位置、方向等資訊以裸資料的形式儲存作為範本(Template)以便比對。通常人們認為，該儲存的範本內容是指紋細節點資訊，而不是原始的指紋影像，不會洩漏原始的指紋資訊。然而，已有研究成果表明，攻擊者能以成功率高於95%的機率，從指紋細節資料恢復出原始的指紋影像，進而用該影像攻擊原系統。另一方面，生物特徵的持久性和穩定性使得它能伴隨人的一生，然而一旦丟失，將導致永久性傷害，因為一但被成功攻擊，該生物特徵將永久不可用。人的生物特徵是有限的，不像密碼或者身分卡可以隨意撤銷更改。由此可見，在這樣的應用環境中，生物特徵的固有性反而成為了缺陷。</p><p>我們團隊以生物特徵加密系統為主要研究的目標，因為錯誤更正碼對於絕大多數的生物特徵加密系統都存在舉足輕重的價值，此一關鍵技術也是本團隊對此研究方向切入的優勢所在。生物特徵加密系統中存在兩個研究主流: (1)模糊承諾方案(Fuzzy Commitment Scheme): Juels 和Wattenberg於1999年提出了一種模糊承諾方案，他們將錯誤更正碼技術與生物特徵結合在一起形成一種典型的密鑰綁定方案。這個方案是由密碼學的比特承諾方案(bit commitment scheme)延伸而來，並藉用了其中的承諾、證據等概念，將其用於生物特徵這種本質上模糊(fuzzy)的資料中。(2)模糊保險箱方案(Fuzzy Vault Scheme): 模糊保險箱方案是指紋加密領域最為經典的實用化方案。該方案最初由Juels與Sudan二人於2002年在模糊承諾方案的基礎上提出。其演算法最大的特點，是添加以假亂真的雜湊點(Chaff points)的加密過程，並很好地把生物特徵的模糊性和密碼演算法的精確性相結合。歡迎有興趣的新生加入本研究群的行列！</p>">DETAILS</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Research/wangluo2_043_resized.jpg" alt="Sample 5">
+                    <h4>ERROR-CORRECTING CODE</h4>
+                    <button class="details-btn" data-title="Error-Correcting Code"
+                        data-text="<p>在現今的社會中，通訊技術實現在人們的日常生活，大家都想正確的將訊息傳達給遠處的人。但是在現實中往往會因為自然環境產生的干擾或電子零件產生的雜訊，使得資料傳輸時產生失真，讓接收到的資料產生錯誤，這時候如果有方法可以將收到的錯誤資訊還原回正確的資料，就可以避免不可靠的通訊。</p><p>學者Claude Shannon在所建構的消息理論中昭示，只要符合通道的特定條件，就可能使得訊息傳輸發生錯誤的機率達到任意小，同時還告訴我們在特定的通道環境假設下，錯誤效能的極限在哪裡，從此之後，使得通訊系統的研究進入一個新的階段，有眾多科學家研究他的理論，並促使錯誤更正碼(Error Correcting Code)的研究領域蓬勃發展。</p><p>為了克服通道環境引起的傳輸錯誤而加諸於傳送訊息的編碼方法，是使用錯誤更正碼（Error Correcting Coding)在傳送訊息中加入冗餘（Redundancy）位元，讓接收端的解碼器能經由所設計的編碼架構去偵測並更正傳輸錯誤，因此在同一訊號雜訊比時，位元錯誤率會降低，但也會導致整體傳輸位元數增加，而使得傳輸速率降低，設計時須同時考慮這兩個因素。</p><p>本實驗室目前所專注之編碼研究為低密度奇偶檢查碼(Low density parity check code)和極化碼(Polar code) 在近年Polar Code 已被3GPP納入Control Channel的5G標準當中，Polar Code是本實驗室錯誤更正碼方向上所著重的研究題目之一。歡迎對5G前瞻行動通訊技術有興趣的新生加入我們的研究團隊！</p>">DETAILS</button>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Research/machinelearning.gif" alt="Sample 6">
+                    <h4>MACHINE LEARNING</h4>
+                    <button class="details-btn" data-title="Machine Learning"
+                        data-text="<p>近期一個德國駭客組織成功使用偽造虹膜破解了三星Galaxy S8的虹膜識別系統。由於在各種攻擊方法中，偽造假虹膜外觀的物體是最大量的攻擊虹膜識別系統的方法，虹膜活力檢測(Iris Liveness Detection)已顯示其安全性上的重要性。幾種常見的假虹膜類型有人工眼球模型、彩色隱形眼鏡、合成虹膜圖像、印在紙上的印刷虹膜圖案、在LCD上顯示虹膜圖像/視頻等。虹膜活力檢測的目的在於識別輸入虹膜圖像是否由活體個體而來，可以有效降低被假虹膜圖像攻擊的風險。基於卷積神經網路（Convolution Neural Network, CNN）的檢測方法也已在中陸續被提出，且在不同的資料庫上表現出優異的性能。然而，目前在此領域上的演算法對於跨域(Cross domain)問題還尚無妥善的解決方法。這是因為在跨域的情形下，訓練階段以及檢測階段在擷取影像時擁有不同的環境、感測器等等，而兩階段所產生的影像將會有風格不一的現象，對於對訓練數據有高度依賴性的檢測系統而言，這使得檢測效能大幅降低，以至於離可接受的準確率還有一大段距離。</p><p>我們將研究呈現攻擊檢測中，跨域設定所造成大幅效能限制的一項具挑戰性議題。第一步，我們將先透過虹膜活體檢測競賽中同域以及跨域所使用的資料庫，設計出一個高效能的虹膜呈現攻擊檢測系統。我們將採兩階段來逐步建構此檢測系統。在第一階段中，我們會先建立一個基於深度學習的同域檢測系統，其中我們會應用到多種的損失函數(loss function)，包含能夠強化同類分類的中心損失函數(center loss function)以及加深類外差異的三元損失函數(triplet loss function)，透過訓練資料盡其所能的在攻擊檢測期間區分出真假虹膜，以獲得一個強大的同域呈現攻擊檢測卷積神經網路模型。在第二階段，我們將開始研究最難以突破的跨域檢測，其困難的原因是：一個呈現攻擊檢測卷積神經網路模型在同域設定下再怎麼訓練，於另一個未知的非監督域(unsupervised domain)中在沒有任何真假標記(Label)的資料的情況下，都非常難得到好的檢測結果。其根本原因源自於兩域之間資料分佈差異過大。事實上，跨域的問題不外乎就出在目標域(target domain)與資源域(source domain)的環境或感測器情況的不同，導致多種元素的不匹配。針對這個問題，目前我們認為可能有幾個可行的解決方法:</p><p>引入生成對抗網路(Generative Adversarial Network, GAN)：它以生成器及判別器兩者疊代對抗更新的方式來訓練判別器，經此過程後，判別器會獲得相當高等級的辨別能力。如果我們利用它來改善檢測模型，相信會得到一個很好的方法來消除目標域所造成差異的元素。另外，考慮到循環生成對抗網路(Cycle-Consistent Adversarial Networks, CycleGAN)有很好的轉換域的能力，我們也計畫藉由其強力的轉換效能，將目標域轉換回資源域，讓目標域的受測資料盡可能適應原本的檢測系統。此兩項技術相信會是稍有建設性的跨域問題解決方式，不過其可能會產生一個問題：在目標域辨別真假資料時，關鍵的真假特徵有機率在轉化途中被淡化，導致準確度大打折扣。第二個解決方案是考慮一個逆向循環生成對抗網路。此想法對於第一點不同的地方在於，它的精神並非讓目標域的資料分佈趨近於資源域的資料分佈，進而適應資源域下訓練好的呈現攻擊檢測卷積神經網路模型，而是在目標域中創建一個全新的檢測模型。在以往的研究方法下，這個想法是無法達到的。因為在跨域設定下，我們可以從目標環境中採集到許多目標域的影像，但是無法得到對應標記，這使以往的研究無法為目標域訓練一個量身打造的檢測系統，這也是如今呈現攻擊檢測在跨域設定下，仍無法有大幅突破的其中一個因素。逆向循環生成對抗網路的想法建立在雙向性的循環生成對抗網路，當我們成功地轉換了目標域及資源域的當下，一個橋梁就被完整的搭建好，此時我們把資源域的資料轉換成目標域，設立出一個擁有真假標記的目標域資料庫，再為其訓練出一個量身訂做的呈現攻擊檢測卷積神經網路模型，而非讓其屈就於他域中所建立的檢測模型。由另一個角度來思考這個問題，其實檢測系統最重要的能力就是要能辨別真假影像。前兩種方法由於目標域的影像無法知道真假，在轉換影像時，生成網路模型很有可能改變了原始的真假特徵。因此我們提出第三個解決方案：將目標域的影像轉換回資源域時，生成網路的學習對象只放入資源域真實的影像，轉換以後進行資源域檢測系統的辨別，爾後只取被辨別為真實的影像回饋到轉換前，並做為一個新生成網路的輸入。如此疊代訓練強化生成網路抓取真實影像特徵的能力。我們相信這樣的做法能夠讓呈現攻擊檢測跨域議題的探討解法再更高一個層次，更合理且有建設性的攻克多年來跨域設定的瓶頸，防止檢測系統在未知領域下的呈現攻擊。歡迎有興趣的新生加入本研究群的行列！</p>">DETAILS</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal 視窗（只需要一個） -->
+        <div id="details-modal" class="modal">
+            <div class="modal-content">
+                <h3 id="modal-title"></h3>
+                <p id="modal-text"></p>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="settings.js"></script>
+</body>
+
+</html>

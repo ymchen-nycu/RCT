@@ -1,0 +1,157 @@
+{
+    "108": {
+        "folder": "images/Members/Alumni/108",
+        "members": [
+            {
+                "name": "林國鈞(Jimmy)",
+                "desc": "<b>Thesis：</b><br>基於軟式可靠度值萃取與錯誤保護的高安全層級之虹膜辨識系統<br>A High-security-level Iris Recognition System based on Soft Template Reliability Extraction and Error Protection<br><br><b>Current job：</b><br>",
+                "photo": "Jimmy-Lin.jpg"
+            },
+            {
+                "name": "楊榮展",
+                "desc": "<b>Thesis：</b><br>基於類低密度奇偶檢查稀疏圖具排程多樣性的極化碼解碼方法<br>Polar Decoding with Schedule Diversity Based on LDPC-like Sparse Graphs<br><br><b>Current job：</b><br>惠榮科技",
+                "photo": "Rongzhan-Yang.jpg"
+            }
+        ]
+    },
+    "109": {
+        "folder": "images/Members/Alumni/109",
+        "members": [
+            {
+                "name": "朱俊宇",
+                "desc": "<b>Thesis：</b><br>基於軟式可靠度值萃取與錯誤保護的高安全層級之虹膜辨識系統的進階研究<br>Advanced Research on the High-security-level Iris Recognition System Based on Soft Reliability Extraction and Error Correction<br><br><b>Current job：</b><br>MEDIA TEK 聯發科",
+                "photo": "Junyu-Zhu.jpg"
+            },
+            {
+                "name": "胡焜閔",
+                "desc": "<b>Thesis：</b><br>利用固有干擾的濾波器組多載波傳輸架構設計<br>On the design of Filter Bank Multi-Carrier Transmission Schemes Utilizing Intrinsic Interferences<br><br><b>Current job：</b><br>MEDIA TEK 聯發科",
+                "photo": "Kunmin-Hu.jpg"
+            },
+            {
+                "name": "許育誠",
+                "desc": "<b>Thesis：</b><br>趨近最佳的多輸入多輸出稀疏碼多工存取架構設計<br>On the Design of Near-optimal MIMO-SCMA Schemes<br><br><b>Current job：</b><br>CHUNGWHWA TELECOM 中華電信",
+                "photo": "Yucheng-Hsu.jpg"
+            },
+            {
+                "name": "Carlos",
+                "desc": "<b>Thesis：</b><br>Reinforcement Learning Based Designs of Sparse Code Multiple Access Codebooks<br><br><b>Current job：</b><br>CIENET TECHNOLOGIES 瞬聯科技",
+                "photo": "Carlos.jpg"
+            },
+            {
+                "name": "黃柏綸",
+                "desc": "<b>Thesis：</b><br>一種嶄新的基於排程多樣性與雜訊擾動的極化碼置信度傳播解碼方式<br>A Novel Polar Belief Propagation Decoding Based on Schedule Diversity and Noise Perturbation<br><br><b>Current job：</b><br>PHISON 群聯電子",
+                "photo": "Bolun-Huang.jpg"
+            }
+        ]
+    },
+    "110": {
+        "folder": "images/Members/Alumni/110",
+        "members": [
+            {
+                "name": "王葆弘",
+                "desc": "<b>Thesis：</b><br>針對下行鏈路正交分類多工架構的一種疏碼多工存取碼簿與基於部分傳輸序列峰鈞功率比降低方法的整合設計<br>A Joint Design of SCMA Codebook and PTS-based PAPR Reduction for Downlink OFDM Scheme<br><br><b>Current job：</b><br>台積電",
+                "photo": "Baohong-Wang.jpg"
+            },
+            {
+                "name": "陳楷屏",
+                "desc": "<b>Thesis：</b><br>基於深度學習技術的趨近最佳稀疏碼多工存取碼簿設計<br>On the Design of Near-optimal SCMA Codebooks Based on Deep Learning Strategies<br><br><b>Current job：</b><br>廣達電腦",
+                "photo": "Kaiping-Chen.jpg"
+            },
+            {
+                "name": "黃國銓",
+                "desc": "<b>Thesis：</b><br>基於資料增量與深度學習技術的高精確度虹膜辨識系統<br>The High-accuracy-Level Iris Recognition System Based on Data Augmentation and Deep Learning Strategies<br><br><b>Current job：</b><br>CHUNGWHWA TELECOM 中華電信",
+                "photo": "Guoquan-Huang.jpg"
+            },
+            {
+                "name": "龔星宇",
+                "desc": "<b>Thesis：</b><br>基於深度學習技術的非同調稀疏碼多工存取架構設計<br>On the Design of Noncoherent SCMA Schemes Based on Deep Learning Strategies<br><br><b>Current job：</b><br>美光科技",
+                "photo": "Xingyu-Gong.jpg"
+            }
+        ]
+    },
+    "111": {
+        "folder": "images/Members/Alumni/111",
+        "members": [
+            {
+                "name": "古軒 (Eric)",
+                "desc": "<b>Thesis：</b><br>基於平行向量資訊傳遞的一種嶄新的外部訊息度受限的漸進邊際增長低密度奇偶檢查碼建構方法<br>A Novel EMD Constrained Progressive Edge-growth LDPC Construction Algorithm Based on Parallel Vector Message Passing<br><br><b>Current job：</b><br>",
+                "photo": "Eric-Ku.jpg"
+            },
+            {
+                "name": "吳孟宸 (Austin)",
+                "desc": "<b>Thesis：</b><br>無允諾上行鏈路非正交多重接取架構的研究<br>A Study of Uplink Grant-free Non-orthogonal Multiple Access Schemes<br><br><b>Current job：</b><br>CHUNGWHWA TELECOM 中華電信",
+                "photo": "Austin-Wu.jpg"
+            },
+            {
+                "name": "林宗憲 (Bryant)",
+                "desc": "<b>Thesis：</b><br>深度神經網路輔助的位元交錯編碼調變架構設計<br>Deep Neural Network Aided Designs of Bit-interleaved Coded Modulation Schemes<br><br><b>Current job：</b><br>廣達電腦",
+                "photo": "Bryant-Lin.jpg"
+            },
+            {
+                "name": "陳鈺享 (Sam)",
+                "desc": "<b>Thesis：</b><br>基於半監督式學習神經網路的一種跨域虹膜演示攻擊檢測器<br>A Cross-domain Iris Presentation Attack Detector Based on Semi-supervised Learning Neural Networks<br><br><b>Current job：</b><br>鉅立半導體 應用工程師",
+                "photo": "Sam-Chen.jpg"
+            }
+        ]
+    },
+    "112": {
+        "folder": "images/Members/Alumni/112",
+        "members": [
+            {
+                "name": "陳鐿心 (Evelyn)",
+                "desc": "<b>Thesis：</b><br>具排程多樣性極化碼置信度傳播解碼器的進階研究<br>Advanced Research on Belief Propagation Based Polar Decoders with Schedule Diversity<br><br><b>Current job：</b><br>工研院",
+                "photo": "Evelyn-Chen.jpg"
+            },
+            {
+                "name": "劉恩瑞 (Ray)",
+                "desc": "<b>Thesis：</b><br>深度神經網路輔助上行鏈路位元交錯編碼稀疏碼多工架構設計<br>Deep Neural Network Aided Designs of Uplink Bit-interleaved Coded Sparse Code Multiple Access Schemes<br><br><b>Current job：</b><br>",
+                "photo": "Ray-Liu.jpg"
+            },
+            {
+                "name": "蔡昌佑 (Will)",
+                "desc": "<b>Thesis：</b><br>針對巨量多機器型態通訊應用的無允諾上行鏈路稀疏碼多工架構<br>Uplink Grant-Free Sparse Code Multiple Access Schemes for mMTC Applications<br><br><b>Current job：</b><br>中華電信",
+                "photo": "Will-Tsai.jpg"
+            }
+        ]
+    },
+    "113": {
+        "folder": "images/Members/Alumni/113",
+        "members": [
+            {
+                "name": "許明凱 (Kevin)",
+                "desc": "<b>Thesis：</b><br>針對用於聯合源通道編碼的雙原型圖低密度奇偶檢查碼的有效率最佳化演算法<br>Efficient Optimization Algorithms of Double Protograph Low-Density Parity-Check Codes for Joint Source-Channel Coding<br><br><b>Current job：</b><br>聯電",
+                "photo": "Kevin-Hsu.jpg"
+            },
+            {
+                "name": "游程鈞 (Kevin)",
+                "desc": "<b>Thesis：</b><br>具排程多樣性極化碼置信度傳播解碼器的複雜度議題研究<br>On the Complexity Issue of Belief Propagation Based Polar Decoders with Schedule Diversity<br><br><b>Current job：</b><br>",
+                "photo": "Kevin-Yu.jpg"
+            },
+            {
+                "name": "劉伸昱",
+                "desc": "<b>Thesis：</b><br>有效率減少支配性陷阱集的逐步邊際增長低密度奇偶檢查碼建構演算法<br>Progressive Edge-growth LDPC Construction Algorithms Based on the Efficient Mitigation of Dominant Trapping Sets<br><br><b>Current job：</b><br>",
+                "photo": "Shenyu-Liu.png"
+            },
+            {
+                "name": "鄭宇翔 (Paul)",
+                "desc": "<b>Thesis：</b><br>可移動星座延展輔助針對具不完美傳送端通道狀態資訊的合作式與多輸入多輸出系統預編碼方法<br>Active Constellation Extension Aided Robust Precoding for Cooperative and MIMO Systems with Imperfect CSIT<br><br><b>Current job：</b><br>鴻海",
+                "photo": "Paul-Cheng.jpg"
+            }
+        ]
+    },
+    "PhD": {
+        "folder": "images/Members/Alumni/PhD",
+        "members": [
+            {
+                "name": "吳峰蒼",
+                "desc": "<b>Thesis：</b><br>針對大訊號集接近最佳不定長度錯誤更正碼的設計<br>On the design of near-optimal variable-length error-correcting codes for large source alphabets<br><br><b>Current job：</b><br>空軍航空技術學院航空電子科 助理教授",
+                "photo": "Fengcang-Wu.jpg"
+            },
+            {
+                "name": "林國鈞(Jimmy)",
+                "desc": "<b>Thesis：</b><br>具高安全層級及精確辨識效能的虹膜密碼系統<br>Iris Cryptosystems for High Security Levels and Accurate Recognition Performances<br><br><b>Current job：</b><br>",
+                "photo": "Jimmy-Lin.jpg"
+            }
+        ]
+    }
+}

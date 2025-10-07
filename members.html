@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYCU RCT LAB</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+</head>
+
+<body class="members">
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div class="button-row">
+            <!-- Alumni 下拉選單 -->
+            <div class="dropdown">
+                <button class="main-btn">Alumni ▾</button>
+                <div class="dropdown-content" id="alumni-dropdown"></div>
+            </div>
+
+            <!-- Current -->
+            <button class="main-btn" id="btn-show-ms">M.S. students</button>
+            <button class="main-btn" id="btn-show-phd">Ph.D students</button>
+        </div>
+
+        <!-- 預設圖片 -->
+        <div id="default-image">
+            <figure>
+                <img src="images/Members/Professor/YM_Chen.jpg" alt="Professor YM Chen">
+                <figcaption>
+                    <p><strong>指導教授：</strong>陳彥銘</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- 照片顯示區 -->
+        <div id="photo-gallery"></div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="settings.js"></script>
+</body>
+
+</html>
